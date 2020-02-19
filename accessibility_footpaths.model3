@@ -1,0 +1,877 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="gdal:convertformat_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="gdal:convertformat"/>
+      <Option type="QString" name="component_description" value="Convert format lines"/>
+      <Option type="double" name="component_pos_x" value="466"/>
+      <Option type="double" name="component_pos_y" value="112"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="gdal:convertformat_1"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="native:filedownloader_1"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="OPTIONS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="-sql &quot;select * from lines&quot; -t_srs EPSG:3857"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="gdal:convertformat_2">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="gdal:convertformat"/>
+      <Option type="QString" name="component_description" value="Convert format points"/>
+      <Option type="double" name="component_pos_x" value="438"/>
+      <Option type="double" name="component_pos_y" value="514"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="gdal:convertformat_2"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="native:filedownloader_1"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="OPTIONS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="-t_srs EPSG:3857"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="gdal:convertformat_3">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="gdal:convertformat"/>
+      <Option type="QString" name="component_description" value="Convert format"/>
+      <Option type="double" name="component_pos_x" value="462"/>
+      <Option type="double" name="component_pos_y" value="880"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="gdal:convertformat_3"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Pedestrian areas">
+          <Option type="QString" name="child_id" value="gdal:convertformat_3"/>
+          <Option type="QString" name="component_description" value="Pedestrian areas"/>
+          <Option type="double" name="component_pos_x" value="662"/>
+          <Option type="double" name="component_pos_y" value="925"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" name="mandatory" value="false"/>
+          <Option type="QString" name="name" value="Pedestrian areas"/>
+          <Option type="QString" name="output_name" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="native:filedownloader_1"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="OPTIONS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="-sql &quot;select * from multipolygons&quot; -t_srs EPSG:3857"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:explodehstorefield_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="native:explodehstorefield"/>
+      <Option type="QString" name="component_description" value="Explode HStore Field lines"/>
+      <Option type="double" name="component_pos_x" value="469"/>
+      <Option type="double" name="component_pos_y" value="214"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="native:explodehstorefield_1"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="EXPECTED_FIELDS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value=""/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="other_tags"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="gdal:convertformat_1"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:explodehstorefield_2">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="native:explodehstorefield"/>
+      <Option type="QString" name="component_description" value="Explode HStore Field points"/>
+      <Option type="double" name="component_pos_x" value="446"/>
+      <Option type="double" name="component_pos_y" value="622"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="native:explodehstorefield_2"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="EXPECTED_FIELDS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value=""/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="other_tags"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="gdal:convertformat_2"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:extractbyexpression_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="native:extractbyexpression"/>
+      <Option type="QString" name="component_description" value="Extract crossings"/>
+      <Option type="double" name="component_pos_x" value="928"/>
+      <Option type="double" name="component_pos_y" value="61"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="native:extractbyexpression_1"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="crossings">
+          <Option type="QString" name="child_id" value="native:extractbyexpression_1"/>
+          <Option type="QString" name="component_description" value="crossings"/>
+          <Option type="double" name="component_pos_x" value="1172"/>
+          <Option type="double" name="component_pos_y" value="146"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" name="mandatory" value="false"/>
+          <Option type="QString" name="name" value="crossings"/>
+          <Option type="QString" name="output_name" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="EXPRESSION">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="&quot;footway&quot; = 'crossing' OR &quot;path&quot; = 'crossing'"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="qgis:fieldcalculator_3"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:extractbyexpression_2">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="native:extractbyexpression"/>
+      <Option type="QString" name="component_description" value="Extract footways-paths"/>
+      <Option type="double" name="component_pos_x" value="925"/>
+      <Option type="double" name="component_pos_y" value="249"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="native:extractbyexpression_2"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="foots-paths">
+          <Option type="QString" name="child_id" value="native:extractbyexpression_2"/>
+          <Option type="QString" name="component_description" value="foots-paths"/>
+          <Option type="double" name="component_pos_x" value="1163"/>
+          <Option type="double" name="component_pos_y" value="310"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" name="mandatory" value="false"/>
+          <Option type="QString" name="name" value="foots-paths"/>
+          <Option type="QString" name="output_name" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="EXPRESSION">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="&quot;footway&quot; &lt;> 'crossing' OR &quot;path&quot; &lt;> 'crossing'"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="qgis:fieldcalculator_3"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:extractbyexpression_3">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="native:extractbyexpression"/>
+      <Option type="QString" name="component_description" value="Extract kerbs"/>
+      <Option type="double" name="component_pos_x" value="930"/>
+      <Option type="double" name="component_pos_y" value="503"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="native:extractbyexpression_3"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="kerb">
+          <Option type="QString" name="child_id" value="native:extractbyexpression_3"/>
+          <Option type="QString" name="component_description" value="kerb"/>
+          <Option type="double" name="component_pos_x" value="1157"/>
+          <Option type="double" name="component_pos_y" value="557"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" name="mandatory" value="false"/>
+          <Option type="QString" name="name" value="kerb"/>
+          <Option type="QString" name="output_name" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="EXPRESSION">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="&quot;kerb&quot; &lt;> ''"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="qgis:fieldcalculator_2"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:extractbyexpression_4">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="native:extractbyexpression"/>
+      <Option type="QString" name="component_description" value="Extract obstacles"/>
+      <Option type="double" name="component_pos_x" value="920"/>
+      <Option type="double" name="component_pos_y" value="707"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="native:extractbyexpression_4"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="obstacles">
+          <Option type="QString" name="child_id" value="native:extractbyexpression_4"/>
+          <Option type="QString" name="component_description" value="obstacles"/>
+          <Option type="double" name="component_pos_x" value="1153"/>
+          <Option type="double" name="component_pos_y" value="762"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" name="mandatory" value="false"/>
+          <Option type="QString" name="name" value="obstacles"/>
+          <Option type="QString" name="output_name" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="EXPRESSION">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="&quot;obstacle:wheelchair&quot; = 'yes' OR &quot;obstacle:wheelchair&quot; = 'limited'"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="qgis:fieldcalculator_2"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:filedownloader_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="native:filedownloader"/>
+      <Option type="QString" name="component_description" value="Download file"/>
+      <Option type="double" name="component_pos_x" value="136"/>
+      <Option type="double" name="component_pos_y" value="226"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="native:filedownloader_1"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="URL">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="quickosm:buildrawquery_1"/>
+            <Option type="QString" name="output_name" value="OUTPUT_URL"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:stringconcatenation_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="native:stringconcatenation"/>
+      <Option type="QString" name="component_description" value="Style file name for crossings"/>
+      <Option type="double" name="component_pos_x" value="1431"/>
+      <Option type="double" name="component_pos_y" value="58"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="native:stringconcatenation_1"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT_1">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="Styles"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT_2">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="/crossings.qml"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:stringconcatenation_2">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="native:stringconcatenation"/>
+      <Option type="QString" name="component_description" value="Style name for foot-paths"/>
+      <Option type="double" name="component_pos_x" value="1407"/>
+      <Option type="double" name="component_pos_y" value="230"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="native:stringconcatenation_2"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT_1">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="Styles"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT_2">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="/foot-path.qml"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:stringconcatenation_3">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="native:stringconcatenation"/>
+      <Option type="QString" name="component_description" value="Style fine name for kerbs"/>
+      <Option type="double" name="component_pos_x" value="1401"/>
+      <Option type="double" name="component_pos_y" value="456"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="native:stringconcatenation_3"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT_1">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="Styles"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT_2">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="/kerbs.qml"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:stringconcatenation_4">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="native:stringconcatenation"/>
+      <Option type="QString" name="component_description" value="Style file name for obstacles"/>
+      <Option type="double" name="component_pos_x" value="1409"/>
+      <Option type="double" name="component_pos_y" value="672"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="native:stringconcatenation_4"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT_1">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="Styles"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT_2">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="/obstacles.qml"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:fieldcalculator_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="qgis:fieldcalculator"/>
+      <Option type="QString" name="component_description" value="New field obstacle_accessibility"/>
+      <Option type="double" name="component_pos_x" value="673"/>
+      <Option type="double" name="component_pos_y" value="504"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="qgis:fieldcalculator_1"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FIELD_LENGTH">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="30"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_NAME">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="obstacle_accessibility"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_PRECISION">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="3"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_TYPE">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="2"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FORMULA">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="CASE&#xa;WHEN &quot;maxwidth:physical&quot; &lt;> '' AND &quot;maxwidth:physical&quot; &lt; '0.9' THEN 'not accessible'&#xa;WHEN &quot;width&quot; &lt;> '' AND &quot;width&quot; &lt; '0.9' THEN 'not accessibile'&#xa;WHEN &quot;wheelchair&quot;='no' OR &quot;obstacle:wheelchair&quot;='yes' THEN 'not accessibile'&#xa;WHEN &quot;obstacle:blind&quot;='yes' OR &quot;obstacle:blind&quot;='limited' OR &quot;obstacle:foot&quot;='limited' THEN 'limited accessibility'&#xa;WHEN &quot;obstacle:wheelchair&quot;='limited' OR &quot;wheelchair&quot;='limited' THEN 'limited accessibility'&#xa;ELSE ''&#xa;END&#xa;"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="native:explodehstorefield_2"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="NEW_FIELD">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="bool" name="static_value" value="true"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:fieldcalculator_2">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="qgis:fieldcalculator"/>
+      <Option type="QString" name="component_description" value="New field kerb_accessibility"/>
+      <Option type="double" name="component_pos_x" value="709"/>
+      <Option type="double" name="component_pos_y" value="597"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="qgis:fieldcalculator_2"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FIELD_LENGTH">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="30"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_NAME">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="kerb_accessibility"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_PRECISION">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="3"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_TYPE">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="2"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FORMULA">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="CASE&#xa;WHEN &quot;kerb&quot;='' THEN ''&#xa;WHEN &quot;kerb&quot;='raised' OR &quot;kerb:height&quot; > '0.02' OR (&quot;incline&quot; &lt;> 'yes' AND &quot;incline&quot; > 15) THEN 'not accessible'&#xa;WHEN (&quot;kerb&quot;='flush' OR &quot;kerb:height&quot; &lt;= '0.01') AND &quot;tactile_paving&quot; = 'yes' THEN 'good accessibility'&#xa;ELSE 'limited accessibility'&#xa;END&#xa;"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="qgis:fieldcalculator_1"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="NEW_FIELD">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="bool" name="static_value" value="true"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:fieldcalculator_3">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="qgis:fieldcalculator"/>
+      <Option type="QString" name="component_description" value="New field foot-path_accessibility"/>
+      <Option type="double" name="component_pos_x" value="704"/>
+      <Option type="double" name="component_pos_y" value="157"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="qgis:fieldcalculator_3"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FIELD_LENGTH">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="30"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_NAME">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="foot-path_accessibility"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_PRECISION">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="3"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_TYPE">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="2"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FORMULA">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="CASE&#xa;WHEN &quot;width&quot; &lt;> '' AND &quot;width&quot; &lt; '0.9' THEN 'not accessible'&#xa;WHEN &quot;smoothness&quot;='very_bad' THEN 'not accessible'&#xa;WHEN &quot;highway&quot;='steps' THEN 'not accessible'&#xa;WHEN &quot;wheelchair&quot;='no' THEN 'not accessible'&#xa;WHEN &quot;crossing&quot;='traffic_signals' AND &quot;traffic_signal:sound&quot; = 'no' THEN 'not accessible'&#xa;WHEN &quot;crossing&quot;='unmarked' THEN 'limited accessibility'&#xa;WHEN &quot;highway&quot;='path' AND &quot;segregated&quot;='no' THEN 'limited accessibility'&#xa;WHEN &quot;incline&quot; > 8 OR &quot;incline:across&quot; > 1 OR &quot;height&quot; > 0.15 OR &quot;smoothness&quot; = 'intermediate' OR &quot;smoothness&quot; = 'bad' THEN 'limited accessibility'&#xa;WHEN &quot;smoothness&quot; = 'good' THEN 'good accessibility'&#xa;END&#xa;"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="native:explodehstorefield_1"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="NEW_FIELD">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="bool" name="static_value" value="true"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:setstyleforvectorlayer_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="qgis:setstyleforvectorlayer"/>
+      <Option type="QString" name="component_description" value="Set style for crossings"/>
+      <Option type="double" name="component_pos_x" value="1159"/>
+      <Option type="double" name="component_pos_y" value="55"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="qgis:setstyleforvectorlayer_1"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="false"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="native:extractbyexpression_1"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="STYLE">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="native:stringconcatenation_1"/>
+            <Option type="QString" name="output_name" value="CONCATENATION"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:setstyleforvectorlayer_2">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="qgis:setstyleforvectorlayer"/>
+      <Option type="QString" name="component_description" value="Set style for foot-paths"/>
+      <Option type="double" name="component_pos_x" value="1162"/>
+      <Option type="double" name="component_pos_y" value="233"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="qgis:setstyleforvectorlayer_2"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="native:extractbyexpression_2"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="STYLE">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="native:stringconcatenation_2"/>
+            <Option type="QString" name="output_name" value="CONCATENATION"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:setstyleforvectorlayer_3">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="qgis:setstyleforvectorlayer"/>
+      <Option type="QString" name="component_description" value="Set style for kerbs"/>
+      <Option type="double" name="component_pos_x" value="1162"/>
+      <Option type="double" name="component_pos_y" value="463"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="qgis:setstyleforvectorlayer_3"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="native:extractbyexpression_3"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="STYLE">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="native:stringconcatenation_3"/>
+            <Option type="QString" name="output_name" value="CONCATENATION"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:setstyleforvectorlayer_4">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="qgis:setstyleforvectorlayer"/>
+      <Option type="QString" name="component_description" value="Set style for obstacles"/>
+      <Option type="double" name="component_pos_x" value="1144"/>
+      <Option type="double" name="component_pos_y" value="674"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="qgis:setstyleforvectorlayer_4"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="native:extractbyexpression_4"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="STYLE">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="native:stringconcatenation_4"/>
+            <Option type="QString" name="output_name" value="CONCATENATION"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="quickosm:buildrawquery_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="quickosm:buildrawquery"/>
+      <Option type="QString" name="component_description" value="Build raw query"/>
+      <Option type="double" name="component_pos_x" value="133"/>
+      <Option type="double" name="component_pos_y" value="132"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="quickosm:buildrawquery_1"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="AREA">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value=""/>
+          </Option>
+        </Option>
+        <Option type="List" name="EXTENT">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="Extent"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="QUERY">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="&lt;osm-script output=&quot;xml&quot; timeout=&quot;25&quot;>&#xa;    &lt;union>&#xa;        &lt;query type=&quot;node&quot;>&#xa;            &lt;has-kv k=&quot;amenity&quot; v=&quot;parking_space&quot;/>&#xa;            &lt;has-kv k=&quot;disabled&quot; v=&quot;designated&quot;/>&#xa;            &lt;bbox-query {{bbox}}/>&#xa;        &lt;/query>&#xa;        &lt;query type=&quot;way&quot;>&#xa;            &lt;has-kv k=&quot;amenity&quot; v=&quot;parking_space&quot;/>&#xa;            &lt;has-kv k=&quot;disabled&quot; v=&quot;designated&quot;/>&#xa;            &lt;bbox-query {{bbox}}/>&#xa;        &lt;/query>&#xa;        &lt;query type=&quot;way&quot;>&#xa;            &lt;has-kv k=&quot;highway&quot; regv=&quot;footway|cycleway|path|pedestrian&quot;/>&#xa;            &lt;bbox-query {{bbox}}/>&#xa;        &lt;/query>&#xa;    &lt;/union>&#xa;    &lt;union>&#xa;        &lt;item/>&#xa;        &lt;recurse type=&quot;down&quot;/>&#xa;    &lt;/union>&#xa;    &lt;print mode=&quot;body&quot;/>&#xa;&lt;/osm-script>&#xa;"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SERVER">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="https://lz4.overpass-api.de/api/interpreter"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option type="QString" name="model_group" value="peba"/>
+  <Option type="QString" name="model_name" value="accessibility_footpaths"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="Extent">
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="Extent"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="Extent"/>
+      <Option type="QString" name="parameter_type" value="extent"/>
+    </Option>
+    <Option type="Map" name="Styles">
+      <Option type="int" name="behavior" value="1"/>
+      <Option type="QString" name="default" value="./styles/"/>
+      <Option type="QString" name="description" value="Styles folder"/>
+      <Option type="QString" name="extension" value=""/>
+      <Option type="QString" name="filefilter" value="All files (*.*)"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="Styles"/>
+      <Option type="QString" name="parameter_type" value="file"/>
+    </Option>
+    <Option type="Map" name="gdal:convertformat_3:Pedestrian areas">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="int" name="data_type" value="-1"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="Pedestrian areas"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="gdal:convertformat_3:Pedestrian areas"/>
+      <Option type="QString" name="parameter_type" value="vectorDestination"/>
+      <Option type="bool" name="supports_non_file_outputs" value="false"/>
+    </Option>
+    <Option type="Map" name="native:extractbyexpression_1:crossings">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="int" name="data_type" value="-1"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="crossings"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="native:extractbyexpression_1:crossings"/>
+      <Option type="QString" name="parameter_type" value="sink"/>
+      <Option type="bool" name="supports_non_file_outputs" value="true"/>
+    </Option>
+    <Option type="Map" name="native:extractbyexpression_2:foots-paths">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="int" name="data_type" value="-1"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="foots-paths"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="native:extractbyexpression_2:foots-paths"/>
+      <Option type="QString" name="parameter_type" value="sink"/>
+      <Option type="bool" name="supports_non_file_outputs" value="true"/>
+    </Option>
+    <Option type="Map" name="native:extractbyexpression_3:kerb">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="int" name="data_type" value="-1"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="kerb"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="native:extractbyexpression_3:kerb"/>
+      <Option type="QString" name="parameter_type" value="sink"/>
+      <Option type="bool" name="supports_non_file_outputs" value="true"/>
+    </Option>
+    <Option type="Map" name="native:extractbyexpression_4:obstacles">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="int" name="data_type" value="-1"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="obstacles"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="native:extractbyexpression_4:obstacles"/>
+      <Option type="QString" name="parameter_type" value="sink"/>
+      <Option type="bool" name="supports_non_file_outputs" value="true"/>
+    </Option>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="Extent">
+      <Option type="QString" name="component_description" value="Extent"/>
+      <Option type="double" name="component_pos_x" value="130"/>
+      <Option type="double" name="component_pos_y" value="47"/>
+      <Option type="QString" name="name" value="Extent"/>
+    </Option>
+    <Option type="Map" name="Styles">
+      <Option type="QString" name="component_description" value="Styles"/>
+      <Option type="double" name="component_pos_x" value="1727"/>
+      <Option type="double" name="component_pos_y" value="406"/>
+      <Option type="QString" name="name" value="Styles"/>
+    </Option>
+  </Option>
+</Option>
