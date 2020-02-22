@@ -2,7 +2,7 @@
 
 Tools to create a map of urban accessibility using OpenStreetMap data and QGIS.
 
-![Screenshot accessibility map in QGIS](screenshot.png)
+![Screenshot accessibility map in QGIS](./images/screenshot.png)
 _Fig. 1: Screenshot of the QGIS interface with modules in use._
 
 ## Objective
@@ -26,7 +26,7 @@ Some of the steps and blocks used in these models are directly inspired by the _
 
 ### Accessibility of footways and paths
 
-![Overview of accessibility_footpaths module](accessibility_footpaths_model.png)
+![Overview of accessibility_footpaths module](./images/accessibility_footpaths_model.png)
 _Fig. 2: Overview of the accessibility_footpaths module._
 
 
@@ -42,7 +42,7 @@ For each of the steps, some more details are described in the following sections
 
 #### 1. Download data from OpenStreetMap
 
-![modPart_query.png](modPart_query.png)
+![modPart_query.png](./images/modPart_query.png)
 
 The block _Build raw query_ uses a functionality of the QGIS [_QuickOSM plugin_](https://github.com/3liz/QuickOSM) to query the OSM database through [Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API) and to extract only a subset of selected information:
 * footways
@@ -79,7 +79,7 @@ The query corresponds to the following Overpass XML:
 
 #### 2. Creates point, lines and polygons layers
 
-![modPart_layers.png](modPart_layers.png)
+![modPart_layers.png](./images/modPart_layers.png)
 
 This step converts the downloaded OSM data into points, lines and polygons features, through the GDAL library [_Convert format_ algorithm](https://documentation.qgis.org/3.4/en/docs/user_manual/processing_algs/gdal/vectorconversion.html?t#convert-format). This is done querying the data using SQL inside the GDAL module block:
 * for points: `-t_srs EPSG:3857`
@@ -92,7 +92,7 @@ For this reason, an additional sub-step is required, splitting the information c
 
 #### 3. Add new columns with accessibility classification
 
-![modPart_newField.png](modPart_newField.png)
+![modPart_newField.png](./images/modPart_newField.png)
 
 One of the main purposes of the [tagging scheme](https://wiki.openstreetmap.org/wiki/PEBA_Comune_di_Padova#Elementi_da_mappare_e_tag_suggeriti) used for the PEBA of Padua was to be as quantitatively as possible, i.e. using specific tags (width, incline, ...) instead of assign the qualitative _wheelchair=yes/limited/no_ tag.
 
@@ -136,7 +136,7 @@ END
 
 #### 4-5. Extract and upload features in qgis
 
-![modPart_extract.png](modPart_extract.png)
+![modPart_extract.png](./images/modPart_extract.png)
 
 Then features are extracted and then loaded separately in the QGIS interface to represent footpaths, crossings, kerbs and obstacles.
 
@@ -148,7 +148,7 @@ The following expression are used:
 
 #### 6. Style layers
 
-![modPart_style.png](modPart_style.png)
+![modPart_style.png](./images/modPart_style.png)
 
 Finally, some styles are applied to the layers, using the following .qml QGIS style files:
 * for **crossings**: [crossings.qml](./styles/crossings.qml)
