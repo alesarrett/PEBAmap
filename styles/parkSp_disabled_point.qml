@@ -1,35 +1,64 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="3.10.2-A Coruña" labelsEnabled="1" simplifyLocal="1" simplifyDrawingHints="0" maxScale="0" simplifyAlgorithm="0" styleCategories="AllStyleCategories" simplifyDrawingTol="1" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" minScale="1e+8" readOnly="0">
+<qgis symbologyReferenceScale="-1" maxScale="0" minScale="100000000" styleCategories="AllStyleCategories" simplifyDrawingHints="0" version="3.28.3-Firenze" simplifyMaxScale="1" readOnly="0" simplifyDrawingTol="1" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" simplifyAlgorithm="0">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
+    <Private>0</Private>
   </flags>
-  <renderer-v2 enableorderby="0" forceraster="0" type="RuleRenderer" symbollevels="0">
-    <rules key="{afcaad47-9439-4162-bf64-9765e0419fff}">
-      <rule symbol="0" filter="&quot;amenity&quot;='parking_space' AND &quot;disabled&quot;='designated'" key="{86c7f2aa-45a0-4e52-8eb7-344283a81b15}" label="Parking disabled"/>
-    </rules>
-    <symbols>
-      <symbol force_rhr="0" clip_to_extent="1" name="0" type="marker" alpha="1">
-        <layer enabled="1" class="SimpleMarker" pass="0" locked="0">
-          <prop v="0" k="angle"/>
-          <prop v="255,126,22,255" k="color"/>
-          <prop v="1" k="horizontal_anchor_point"/>
-          <prop v="bevel" k="joinstyle"/>
-          <prop v="square" k="name"/>
-          <prop v="0,0" k="offset"/>
-          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-          <prop v="MM" k="offset_unit"/>
-          <prop v="35,35,35,255" k="outline_color"/>
-          <prop v="solid" k="outline_style"/>
-          <prop v="0.1" k="outline_width"/>
-          <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-          <prop v="MM" k="outline_width_unit"/>
-          <prop v="diameter" k="scale_method"/>
-          <prop v="3.4" k="size"/>
-          <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-          <prop v="MM" k="size_unit"/>
-          <prop v="1" k="vertical_anchor_point"/>
+  <temporal startExpression="" enabled="0" durationField="" limitMode="0" endExpression="" durationUnit="min" startField="" endField="" mode="0" accumulate="0" fixedDuration="0">
+    <fixedRange>
+      <start></start>
+      <end></end>
+    </fixedRange>
+  </temporal>
+  <elevation respectLayerSymbol="1" type="IndividualFeatures" binding="Centroid" symbology="Line" zscale="1" extrusion="0" showMarkerSymbolInSurfacePlots="0" extrusionEnabled="0" zoffset="0" clamping="Terrain">
+    <data-defined-properties>
+      <Option type="Map">
+        <Option name="name" type="QString" value=""/>
+        <Option name="properties"/>
+        <Option name="type" type="QString" value="collection"/>
+      </Option>
+    </data-defined-properties>
+    <profileLineSymbol>
+      <symbol name="" type="line" force_rhr="0" is_animated="0" alpha="1" frame_rate="10" clip_to_extent="1">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""/>
+            <Option name="properties"/>
+            <Option name="type" type="QString" value="collection"/>
+          </Option>
+        </data_defined_properties>
+        <layer enabled="1" locked="0" class="SimpleLine" pass="0">
+          <Option type="Map">
+            <Option name="align_dash_pattern" type="QString" value="0"/>
+            <Option name="capstyle" type="QString" value="square"/>
+            <Option name="customdash" type="QString" value="5;2"/>
+            <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="customdash_unit" type="QString" value="MM"/>
+            <Option name="dash_pattern_offset" type="QString" value="0"/>
+            <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
+            <Option name="draw_inside_polygon" type="QString" value="0"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="line_color" type="QString" value="164,113,88,255"/>
+            <Option name="line_style" type="QString" value="solid"/>
+            <Option name="line_width" type="QString" value="0.6"/>
+            <Option name="line_width_unit" type="QString" value="MM"/>
+            <Option name="offset" type="QString" value="0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="ring_filter" type="QString" value="0"/>
+            <Option name="trim_distance_end" type="QString" value="0"/>
+            <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="trim_distance_end_unit" type="QString" value="MM"/>
+            <Option name="trim_distance_start" type="QString" value="0"/>
+            <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="trim_distance_start_unit" type="QString" value="MM"/>
+            <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"/>
+            <Option name="use_custom_dash" type="QString" value="0"/>
+            <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+          </Option>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -38,24 +67,144 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer enabled="1" class="SvgMarker" pass="0" locked="0">
-          <prop v="0" k="angle"/>
-          <prop v="0,0,0,255" k="color"/>
-          <prop v="0" k="fixedAspectRatio"/>
-          <prop v="1" k="horizontal_anchor_point"/>
-          <prop v="transport/transport_parking_disabled.svg" k="name"/>
-          <prop v="0,0" k="offset"/>
-          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-          <prop v="MM" k="offset_unit"/>
-          <prop v="0,0,0,255" k="outline_color"/>
-          <prop v="0.1" k="outline_width"/>
-          <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-          <prop v="MM" k="outline_width_unit"/>
-          <prop v="diameter" k="scale_method"/>
-          <prop v="3.4" k="size"/>
-          <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-          <prop v="MM" k="size_unit"/>
-          <prop v="1" k="vertical_anchor_point"/>
+      </symbol>
+    </profileLineSymbol>
+    <profileFillSymbol>
+      <symbol name="" type="fill" force_rhr="0" is_animated="0" alpha="1" frame_rate="10" clip_to_extent="1">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""/>
+            <Option name="properties"/>
+            <Option name="type" type="QString" value="collection"/>
+          </Option>
+        </data_defined_properties>
+        <layer enabled="1" locked="0" class="SimpleFill" pass="0">
+          <Option type="Map">
+            <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="color" type="QString" value="164,113,88,255"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="offset" type="QString" value="0,0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="outline_color" type="QString" value="117,81,63,255"/>
+            <Option name="outline_style" type="QString" value="solid"/>
+            <Option name="outline_width" type="QString" value="0.2"/>
+            <Option name="outline_width_unit" type="QString" value="MM"/>
+            <Option name="style" type="QString" value="solid"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option name="name" type="QString" value=""/>
+              <Option name="properties"/>
+              <Option name="type" type="QString" value="collection"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </profileFillSymbol>
+    <profileMarkerSymbol>
+      <symbol name="" type="marker" force_rhr="0" is_animated="0" alpha="1" frame_rate="10" clip_to_extent="1">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""/>
+            <Option name="properties"/>
+            <Option name="type" type="QString" value="collection"/>
+          </Option>
+        </data_defined_properties>
+        <layer enabled="1" locked="0" class="SimpleMarker" pass="0">
+          <Option type="Map">
+            <Option name="angle" type="QString" value="0"/>
+            <Option name="cap_style" type="QString" value="square"/>
+            <Option name="color" type="QString" value="164,113,88,255"/>
+            <Option name="horizontal_anchor_point" type="QString" value="1"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="name" type="QString" value="diamond"/>
+            <Option name="offset" type="QString" value="0,0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="outline_color" type="QString" value="117,81,63,255"/>
+            <Option name="outline_style" type="QString" value="solid"/>
+            <Option name="outline_width" type="QString" value="0.2"/>
+            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="outline_width_unit" type="QString" value="MM"/>
+            <Option name="scale_method" type="QString" value="diameter"/>
+            <Option name="size" type="QString" value="3"/>
+            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="size_unit" type="QString" value="MM"/>
+            <Option name="vertical_anchor_point" type="QString" value="1"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option name="name" type="QString" value=""/>
+              <Option name="properties"/>
+              <Option name="type" type="QString" value="collection"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </profileMarkerSymbol>
+  </elevation>
+  <renderer-v2 symbollevels="0" type="singleSymbol" forceraster="0" referencescale="-1" enableorderby="0">
+    <symbols>
+      <symbol name="0" type="marker" force_rhr="0" is_animated="0" alpha="1" frame_rate="10" clip_to_extent="1">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""/>
+            <Option name="properties"/>
+            <Option name="type" type="QString" value="collection"/>
+          </Option>
+        </data_defined_properties>
+        <layer enabled="1" locked="0" class="SimpleMarker" pass="0">
+          <Option type="Map">
+            <Option name="angle" type="QString" value="0"/>
+            <Option name="cap_style" type="QString" value="square"/>
+            <Option name="color" type="QString" value="255,126,22,255"/>
+            <Option name="horizontal_anchor_point" type="QString" value="1"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="name" type="QString" value="square"/>
+            <Option name="offset" type="QString" value="0,0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="outline_color" type="QString" value="35,35,35,255"/>
+            <Option name="outline_style" type="QString" value="solid"/>
+            <Option name="outline_width" type="QString" value="0.1"/>
+            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="outline_width_unit" type="QString" value="MM"/>
+            <Option name="scale_method" type="QString" value="diameter"/>
+            <Option name="size" type="QString" value="3.4"/>
+            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="size_unit" type="QString" value="MM"/>
+            <Option name="vertical_anchor_point" type="QString" value="1"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option name="name" type="QString" value=""/>
+              <Option name="properties"/>
+              <Option name="type" type="QString" value="collection"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+        <layer enabled="1" locked="0" class="SvgMarker" pass="0">
+          <Option type="Map">
+            <Option name="angle" type="QString" value="0"/>
+            <Option name="color" type="QString" value="0,0,0,255"/>
+            <Option name="fixedAspectRatio" type="QString" value="0"/>
+            <Option name="horizontal_anchor_point" type="QString" value="1"/>
+            <Option name="name" type="QString" value="transport/transport_parking_disabled.svg"/>
+            <Option name="offset" type="QString" value="0,0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255"/>
+            <Option name="outline_width" type="QString" value="0.1"/>
+            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="outline_width_unit" type="QString" value="MM"/>
+            <Option name="parameters"/>
+            <Option name="scale_method" type="QString" value="diameter"/>
+            <Option name="size" type="QString" value="3.4"/>
+            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="size_unit" type="QString" value="MM"/>
+            <Option name="vertical_anchor_point" type="QString" value="1"/>
+          </Option>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -66,15 +215,51 @@
         </layer>
       </symbol>
     </symbols>
+    <rotation/>
+    <sizescale/>
   </renderer-v2>
   <labeling type="rule-based">
-    <rules key="{cfa9245d-12e5-4ee1-a89b-a552c6a93b21}">
-      <rule filter="&quot;addr:housenumber&quot; &lt;> ''" key="{8777bc48-0ff6-41c0-ad51-c785fe5e8842}" scalemindenom="1" scalemaxdenom="5000">
+    <rules key="{4fff0f46-fdd0-4406-9524-020e418591f9}">
+      <rule scalemaxdenom="5000" filter="&quot;addr:housenumber&quot; &lt;> ''" scalemindenom="1" key="{34018bad-43b4-4f8c-8dda-586cc53e3c84}">
         <settings calloutType="simple">
-          <text-style fontSizeUnit="Point" blendMode="0" textOpacity="1" isExpression="0" fontLetterSpacing="0" previewBkgrdColor="255,255,255,255" fontSize="8" fontFamily="Ubuntu" fontUnderline="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontWeight="50" fieldName="addr:housenumber" multilineHeight="1" useSubstitutions="0" fontStrikeout="0" textOrientation="horizontal" textColor="99,99,99,255" namedStyle="Regular" fontKerning="1" fontItalic="0" fontWordSpacing="0" fontCapitals="0">
-            <text-buffer bufferOpacity="1" bufferDraw="1" bufferSizeUnits="MM" bufferNoFill="1" bufferJoinStyle="128" bufferBlendMode="0" bufferSize="0.2" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferColor="255,255,255,255"/>
-            <background shapeRotation="0" shapeRotationType="0" shapeSVGFile="" shapeBorderColor="128,128,128,255" shapeSizeY="0" shapeOffsetY="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeFillColor="255,255,255,255" shapeRadiiY="0" shapeBorderWidthUnit="MM" shapeRadiiX="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeDraw="0" shapeBorderWidth="0" shapeJoinStyle="64" shapeOpacity="1" shapeRadiiUnit="MM" shapeOffsetUnit="MM" shapeBlendMode="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeType="0" shapeSizeX="0" shapeSizeType="0" shapeSizeUnit="MM"/>
-            <shadow shadowUnder="0" shadowOffsetUnit="MM" shadowOpacity="0.7" shadowScale="100" shadowRadius="1.5" shadowDraw="0" shadowOffsetGlobal="1" shadowOffsetAngle="135" shadowBlendMode="6" shadowRadiusAlphaOnly="0" shadowOffsetDist="1" shadowColor="0,0,0,255" shadowRadiusUnit="MM" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0"/>
+          <text-style forcedBold="0" textColor="99,99,99,255" textOrientation="horizontal" fontStrikeout="0" textOpacity="1" isExpression="0" fieldName="addr:housenumber" fontSizeMapUnitScale="3x:0,0,0,0,0,0" capitalization="0" fontLetterSpacing="0" previewBkgrdColor="255,255,255,255" fontSize="8" fontWeight="50" fontItalic="0" namedStyle="Regular" legendString="Aa" forcedItalic="0" fontUnderline="0" blendMode="0" fontSizeUnit="Point" multilineHeightUnit="Percentage" multilineHeight="1" allowHtml="0" useSubstitutions="0" fontFamily="Ubuntu" fontWordSpacing="0" fontKerning="1">
+            <families/>
+            <text-buffer bufferColor="255,255,255,255" bufferDraw="1" bufferJoinStyle="128" bufferBlendMode="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferOpacity="1" bufferSizeUnits="MM" bufferSize="0.20000000000000001" bufferNoFill="1"/>
+            <text-mask maskJoinStyle="128" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskedSymbolLayers="" maskEnabled="0" maskOpacity="1" maskType="0" maskSize="0" maskSizeUnits="MM"/>
+            <background shapeRadiiX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetX="0" shapeSizeX="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOpacity="1" shapeBorderWidthUnit="MM" shapeRotationType="0" shapeSVGFile="" shapeSizeUnit="MM" shapeOffsetUnit="MM" shapeType="0" shapeSizeType="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRadiiY="0" shapeDraw="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeJoinStyle="64" shapeFillColor="255,255,255,255" shapeRadiiUnit="MM" shapeRotation="0" shapeBlendMode="0" shapeOffsetY="0" shapeSizeY="0">
+              <symbol name="fillSymbol" type="fill" force_rhr="0" is_animated="0" alpha="1" frame_rate="10" clip_to_extent="1">
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option name="name" type="QString" value=""/>
+                    <Option name="properties"/>
+                    <Option name="type" type="QString" value="collection"/>
+                  </Option>
+                </data_defined_properties>
+                <layer enabled="1" locked="0" class="SimpleFill" pass="0">
+                  <Option type="Map">
+                    <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                    <Option name="color" type="QString" value="255,255,255,255"/>
+                    <Option name="joinstyle" type="QString" value="bevel"/>
+                    <Option name="offset" type="QString" value="0,0"/>
+                    <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                    <Option name="offset_unit" type="QString" value="MM"/>
+                    <Option name="outline_color" type="QString" value="128,128,128,255"/>
+                    <Option name="outline_style" type="QString" value="no"/>
+                    <Option name="outline_width" type="QString" value="0"/>
+                    <Option name="outline_width_unit" type="QString" value="MM"/>
+                    <Option name="style" type="QString" value="solid"/>
+                  </Option>
+                  <data_defined_properties>
+                    <Option type="Map">
+                      <Option name="name" type="QString" value=""/>
+                      <Option name="properties"/>
+                      <Option name="type" type="QString" value="collection"/>
+                    </Option>
+                  </data_defined_properties>
+                </layer>
+              </symbol>
+            </background>
+            <shadow shadowRadius="1.5" shadowDraw="0" shadowOffsetUnit="MM" shadowBlendMode="6" shadowOpacity="0.69999999999999996" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetDist="1" shadowColor="0,0,0,255" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusUnit="MM" shadowUnder="0" shadowOffsetGlobal="1" shadowRadiusAlphaOnly="0" shadowScale="100"/>
             <dd_properties>
               <Option type="Map">
                 <Option name="name" type="QString" value=""/>
@@ -84,9 +269,9 @@
             </dd_properties>
             <substitutions/>
           </text-style>
-          <text-format autoWrapLength="0" plussign="0" decimals="3" placeDirectionSymbol="0" wrapChar="" useMaxLineLengthForAutoWrap="1" multilineAlign="3" leftDirectionSymbol="&lt;" addDirectionSymbol="0" rightDirectionSymbol=">" reverseDirectionSymbol="0" formatNumbers="0"/>
-          <placement geometryGeneratorType="PointGeometry" distMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4" fitInPolygonOnly="0" maxCurvedCharAngleIn="25" overrunDistance="0" overrunDistanceUnit="MM" placementFlags="10" yOffset="0" rotationAngle="0" dist="0" layerType="UnknownGeometry" priority="5" repeatDistanceUnits="MM" centroidInside="0" maxCurvedCharAngleOut="-25" offsetUnits="MM" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetType="0" geometryGeneratorEnabled="0" centroidWhole="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" distUnits="MM" preserveRotation="1" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" placement="1" xOffset="0" repeatDistance="0" geometryGenerator=""/>
-          <rendering maxNumLabels="2000" displayAll="0" scaleMin="0" fontLimitPixelSize="0" mergeLines="0" fontMinPixelSize="3" labelPerPart="0" scaleVisibility="0" upsidedownLabels="0" obstacle="1" drawLabels="1" minFeatureSize="0" fontMaxPixelSize="10000" limitNumLabels="0" obstacleFactor="1" zIndex="0" obstacleType="0" scaleMax="0"/>
+          <text-format wrapChar="" plussign="0" rightDirectionSymbol=">" placeDirectionSymbol="0" formatNumbers="0" autoWrapLength="0" leftDirectionSymbol="&lt;" decimals="3" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" multilineAlign="3" addDirectionSymbol="0"/>
+          <placement rotationUnit="AngleDegrees" dist="0" placement="1" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" lineAnchorType="0" distUnits="MM" polygonPlacementFlags="2" geometryGenerator="" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" layerType="UnknownGeometry" distMapUnitScale="3x:0,0,0,0,0,0" lineAnchorTextPoint="CenterOfText" fitInPolygonOnly="0" placementFlags="10" lineAnchorClipping="0" priority="5" preserveRotation="1" overlapHandling="PreventOverlap" offsetType="0" centroidWhole="0" geometryGeneratorType="PointGeometry" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0" maxCurvedCharAngleOut="-25" allowDegraded="0" overrunDistance="0" quadOffset="4" xOffset="0" centroidInside="0" maxCurvedCharAngleIn="25" overrunDistanceUnit="MM" yOffset="0" rotationAngle="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" geometryGeneratorEnabled="0" repeatDistanceUnits="MM" lineAnchorPercent="0.5" offsetUnits="MM"/>
+          <rendering unplacedVisibility="0" minFeatureSize="0" scaleMin="0" obstacleFactor="1" fontLimitPixelSize="0" obstacle="1" scaleVisibility="0" scaleMax="0" limitNumLabels="0" obstacleType="0" upsidedownLabels="0" fontMaxPixelSize="10000" maxNumLabels="2000" mergeLines="0" fontMinPixelSize="3" zIndex="0" drawLabels="1" labelPerPart="0"/>
           <dd_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -97,6 +282,7 @@
           <callout type="simple">
             <Option type="Map">
               <Option name="anchorPoint" type="QString" value="pole_of_inaccessibility"/>
+              <Option name="blendMode" type="int" value="0"/>
               <Option name="ddProperties" type="Map">
                 <Option name="name" type="QString" value=""/>
                 <Option name="properties"/>
@@ -104,7 +290,8 @@
               </Option>
               <Option name="drawToAllParts" type="bool" value="false"/>
               <Option name="enabled" type="QString" value="0"/>
-              <Option name="lineSymbol" type="QString" value="&lt;symbol force_rhr=&quot;0&quot; clip_to_extent=&quot;1&quot; name=&quot;symbol&quot; type=&quot;line&quot; alpha=&quot;1&quot;>&lt;layer enabled=&quot;1&quot; class=&quot;SimpleLine&quot; pass=&quot;0&quot; locked=&quot;0&quot;>&lt;prop v=&quot;square&quot; k=&quot;capstyle&quot;/>&lt;prop v=&quot;5;2&quot; k=&quot;customdash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;customdash_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;customdash_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;draw_inside_polygon&quot;/>&lt;prop v=&quot;bevel&quot; k=&quot;joinstyle&quot;/>&lt;prop v=&quot;60,60,60,255&quot; k=&quot;line_color&quot;/>&lt;prop v=&quot;solid&quot; k=&quot;line_style&quot;/>&lt;prop v=&quot;0.3&quot; k=&quot;line_width&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;line_width_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;offset&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;offset_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;offset_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;ring_filter&quot;/>&lt;prop v=&quot;0&quot; k=&quot;use_custom_dash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;width_map_unit_scale&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; type=&quot;QString&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; type=&quot;QString&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>"/>
+              <Option name="labelAnchorPoint" type="QString" value="point_on_exterior"/>
+              <Option name="lineSymbol" type="QString" value="&lt;symbol name=&quot;symbol&quot; type=&quot;line&quot; force_rhr=&quot;0&quot; is_animated=&quot;0&quot; alpha=&quot;1&quot; frame_rate=&quot;10&quot; clip_to_extent=&quot;1&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; type=&quot;QString&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; type=&quot;QString&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer enabled=&quot;1&quot; locked=&quot;0&quot; class=&quot;SimpleLine&quot; pass=&quot;0&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;align_dash_pattern&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;capstyle&quot; type=&quot;QString&quot; value=&quot;square&quot;/>&lt;Option name=&quot;customdash&quot; type=&quot;QString&quot; value=&quot;5;2&quot;/>&lt;Option name=&quot;customdash_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;customdash_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;dash_pattern_offset&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;dash_pattern_offset_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;dash_pattern_offset_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;draw_inside_polygon&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;joinstyle&quot; type=&quot;QString&quot; value=&quot;bevel&quot;/>&lt;Option name=&quot;line_color&quot; type=&quot;QString&quot; value=&quot;60,60,60,255&quot;/>&lt;Option name=&quot;line_style&quot; type=&quot;QString&quot; value=&quot;solid&quot;/>&lt;Option name=&quot;line_width&quot; type=&quot;QString&quot; value=&quot;0.3&quot;/>&lt;Option name=&quot;line_width_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;offset&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;offset_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;offset_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;ring_filter&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;trim_distance_end&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;trim_distance_end_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;trim_distance_end_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;trim_distance_start&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;trim_distance_start_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;trim_distance_start_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;tweak_dash_pattern_on_corners&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;use_custom_dash&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;width_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;/Option>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; type=&quot;QString&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; type=&quot;QString&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>"/>
               <Option name="minLength" type="double" value="0"/>
               <Option name="minLengthMapUnitScale" type="QString" value="3x:0,0,0,0,0,0"/>
               <Option name="minLengthUnit" type="QString" value="MM"/>
@@ -118,12 +305,46 @@
           </callout>
         </settings>
       </rule>
-      <rule active="0" key="{8fc02b8c-c6b0-4083-ae6d-e68cbe0cf42e}">
+      <rule active="0" key="{7d96d7df-b1e7-4934-84a8-56c9662c9a35}">
         <settings calloutType="simple">
-          <text-style fontSizeUnit="Point" blendMode="0" textOpacity="1" isExpression="0" fontLetterSpacing="0" previewBkgrdColor="255,255,255,255" fontSize="10" fontFamily="Ubuntu" fontUnderline="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontWeight="50" fieldName="other_tags" multilineHeight="1" useSubstitutions="0" fontStrikeout="0" textOrientation="horizontal" textColor="0,0,0,255" namedStyle="Regular" fontKerning="1" fontItalic="0" fontWordSpacing="0" fontCapitals="0">
-            <text-buffer bufferOpacity="1" bufferDraw="0" bufferSizeUnits="MM" bufferNoFill="1" bufferJoinStyle="128" bufferBlendMode="0" bufferSize="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferColor="255,255,255,255"/>
-            <background shapeRotation="0" shapeRotationType="0" shapeSVGFile="" shapeBorderColor="128,128,128,255" shapeSizeY="0" shapeOffsetY="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeFillColor="255,255,255,255" shapeRadiiY="0" shapeBorderWidthUnit="MM" shapeRadiiX="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeDraw="0" shapeBorderWidth="0" shapeJoinStyle="64" shapeOpacity="1" shapeRadiiUnit="MM" shapeOffsetUnit="MM" shapeBlendMode="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeType="0" shapeSizeX="0" shapeSizeType="0" shapeSizeUnit="MM"/>
-            <shadow shadowUnder="0" shadowOffsetUnit="MM" shadowOpacity="0.7" shadowScale="100" shadowRadius="1.5" shadowDraw="0" shadowOffsetGlobal="1" shadowOffsetAngle="135" shadowBlendMode="6" shadowRadiusAlphaOnly="0" shadowOffsetDist="1" shadowColor="0,0,0,255" shadowRadiusUnit="MM" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0"/>
+          <text-style forcedBold="0" textColor="0,0,0,255" textOrientation="horizontal" fontStrikeout="0" textOpacity="1" isExpression="0" fieldName="other_tags" fontSizeMapUnitScale="3x:0,0,0,0,0,0" capitalization="0" fontLetterSpacing="0" previewBkgrdColor="255,255,255,255" fontSize="10" fontWeight="50" fontItalic="0" namedStyle="Regular" legendString="Aa" forcedItalic="0" fontUnderline="0" blendMode="0" fontSizeUnit="Point" multilineHeightUnit="Percentage" multilineHeight="1" allowHtml="0" useSubstitutions="0" fontFamily="Ubuntu" fontWordSpacing="0" fontKerning="1">
+            <families/>
+            <text-buffer bufferColor="255,255,255,255" bufferDraw="0" bufferJoinStyle="128" bufferBlendMode="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferOpacity="1" bufferSizeUnits="MM" bufferSize="1" bufferNoFill="1"/>
+            <text-mask maskJoinStyle="128" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskedSymbolLayers="" maskEnabled="0" maskOpacity="1" maskType="0" maskSize="0" maskSizeUnits="MM"/>
+            <background shapeRadiiX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetX="0" shapeSizeX="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOpacity="1" shapeBorderWidthUnit="MM" shapeRotationType="0" shapeSVGFile="" shapeSizeUnit="MM" shapeOffsetUnit="MM" shapeType="0" shapeSizeType="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRadiiY="0" shapeDraw="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeJoinStyle="64" shapeFillColor="255,255,255,255" shapeRadiiUnit="MM" shapeRotation="0" shapeBlendMode="0" shapeOffsetY="0" shapeSizeY="0">
+              <symbol name="fillSymbol" type="fill" force_rhr="0" is_animated="0" alpha="1" frame_rate="10" clip_to_extent="1">
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option name="name" type="QString" value=""/>
+                    <Option name="properties"/>
+                    <Option name="type" type="QString" value="collection"/>
+                  </Option>
+                </data_defined_properties>
+                <layer enabled="1" locked="0" class="SimpleFill" pass="0">
+                  <Option type="Map">
+                    <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                    <Option name="color" type="QString" value="255,255,255,255"/>
+                    <Option name="joinstyle" type="QString" value="bevel"/>
+                    <Option name="offset" type="QString" value="0,0"/>
+                    <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                    <Option name="offset_unit" type="QString" value="MM"/>
+                    <Option name="outline_color" type="QString" value="128,128,128,255"/>
+                    <Option name="outline_style" type="QString" value="no"/>
+                    <Option name="outline_width" type="QString" value="0"/>
+                    <Option name="outline_width_unit" type="QString" value="MM"/>
+                    <Option name="style" type="QString" value="solid"/>
+                  </Option>
+                  <data_defined_properties>
+                    <Option type="Map">
+                      <Option name="name" type="QString" value=""/>
+                      <Option name="properties"/>
+                      <Option name="type" type="QString" value="collection"/>
+                    </Option>
+                  </data_defined_properties>
+                </layer>
+              </symbol>
+            </background>
+            <shadow shadowRadius="1.5" shadowDraw="0" shadowOffsetUnit="MM" shadowBlendMode="6" shadowOpacity="0.69999999999999996" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetDist="1" shadowColor="0,0,0,255" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusUnit="MM" shadowUnder="0" shadowOffsetGlobal="1" shadowRadiusAlphaOnly="0" shadowScale="100"/>
             <dd_properties>
               <Option type="Map">
                 <Option name="name" type="QString" value=""/>
@@ -133,9 +354,9 @@
             </dd_properties>
             <substitutions/>
           </text-style>
-          <text-format autoWrapLength="0" plussign="0" decimals="3" placeDirectionSymbol="0" wrapChar="" useMaxLineLengthForAutoWrap="1" multilineAlign="3" leftDirectionSymbol="&lt;" addDirectionSymbol="0" rightDirectionSymbol=">" reverseDirectionSymbol="0" formatNumbers="0"/>
-          <placement geometryGeneratorType="PointGeometry" distMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4" fitInPolygonOnly="0" maxCurvedCharAngleIn="25" overrunDistance="0" overrunDistanceUnit="MM" placementFlags="10" yOffset="0" rotationAngle="0" dist="0" layerType="UnknownGeometry" priority="5" repeatDistanceUnits="MM" centroidInside="0" maxCurvedCharAngleOut="-25" offsetUnits="MM" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetType="0" geometryGeneratorEnabled="0" centroidWhole="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" distUnits="MM" preserveRotation="1" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" placement="0" xOffset="0" repeatDistance="0" geometryGenerator=""/>
-          <rendering maxNumLabels="2000" displayAll="0" scaleMin="0" fontLimitPixelSize="0" mergeLines="0" fontMinPixelSize="3" labelPerPart="0" scaleVisibility="0" upsidedownLabels="0" obstacle="1" drawLabels="1" minFeatureSize="0" fontMaxPixelSize="10000" limitNumLabels="0" obstacleFactor="1" zIndex="0" obstacleType="0" scaleMax="0"/>
+          <text-format wrapChar="" plussign="0" rightDirectionSymbol=">" placeDirectionSymbol="0" formatNumbers="0" autoWrapLength="0" leftDirectionSymbol="&lt;" decimals="3" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" multilineAlign="3" addDirectionSymbol="0"/>
+          <placement rotationUnit="AngleDegrees" dist="0" placement="0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" lineAnchorType="0" distUnits="MM" polygonPlacementFlags="2" geometryGenerator="" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" layerType="UnknownGeometry" distMapUnitScale="3x:0,0,0,0,0,0" lineAnchorTextPoint="CenterOfText" fitInPolygonOnly="0" placementFlags="10" lineAnchorClipping="0" priority="5" preserveRotation="1" overlapHandling="PreventOverlap" offsetType="0" centroidWhole="0" geometryGeneratorType="PointGeometry" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0" maxCurvedCharAngleOut="-25" allowDegraded="0" overrunDistance="0" quadOffset="4" xOffset="0" centroidInside="0" maxCurvedCharAngleIn="25" overrunDistanceUnit="MM" yOffset="0" rotationAngle="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" geometryGeneratorEnabled="0" repeatDistanceUnits="MM" lineAnchorPercent="0.5" offsetUnits="MM"/>
+          <rendering unplacedVisibility="0" minFeatureSize="0" scaleMin="0" obstacleFactor="1" fontLimitPixelSize="0" obstacle="1" scaleVisibility="0" scaleMax="0" limitNumLabels="0" obstacleType="0" upsidedownLabels="0" fontMaxPixelSize="10000" maxNumLabels="2000" mergeLines="0" fontMinPixelSize="3" zIndex="0" drawLabels="1" labelPerPart="0"/>
           <dd_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -146,6 +367,7 @@
           <callout type="simple">
             <Option type="Map">
               <Option name="anchorPoint" type="QString" value="pole_of_inaccessibility"/>
+              <Option name="blendMode" type="int" value="0"/>
               <Option name="ddProperties" type="Map">
                 <Option name="name" type="QString" value=""/>
                 <Option name="properties"/>
@@ -153,7 +375,8 @@
               </Option>
               <Option name="drawToAllParts" type="bool" value="false"/>
               <Option name="enabled" type="QString" value="0"/>
-              <Option name="lineSymbol" type="QString" value="&lt;symbol force_rhr=&quot;0&quot; clip_to_extent=&quot;1&quot; name=&quot;symbol&quot; type=&quot;line&quot; alpha=&quot;1&quot;>&lt;layer enabled=&quot;1&quot; class=&quot;SimpleLine&quot; pass=&quot;0&quot; locked=&quot;0&quot;>&lt;prop v=&quot;square&quot; k=&quot;capstyle&quot;/>&lt;prop v=&quot;5;2&quot; k=&quot;customdash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;customdash_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;customdash_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;draw_inside_polygon&quot;/>&lt;prop v=&quot;bevel&quot; k=&quot;joinstyle&quot;/>&lt;prop v=&quot;60,60,60,255&quot; k=&quot;line_color&quot;/>&lt;prop v=&quot;solid&quot; k=&quot;line_style&quot;/>&lt;prop v=&quot;0.3&quot; k=&quot;line_width&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;line_width_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;offset&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;offset_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;offset_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;ring_filter&quot;/>&lt;prop v=&quot;0&quot; k=&quot;use_custom_dash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;width_map_unit_scale&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; type=&quot;QString&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; type=&quot;QString&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>"/>
+              <Option name="labelAnchorPoint" type="QString" value="point_on_exterior"/>
+              <Option name="lineSymbol" type="QString" value="&lt;symbol name=&quot;symbol&quot; type=&quot;line&quot; force_rhr=&quot;0&quot; is_animated=&quot;0&quot; alpha=&quot;1&quot; frame_rate=&quot;10&quot; clip_to_extent=&quot;1&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; type=&quot;QString&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; type=&quot;QString&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer enabled=&quot;1&quot; locked=&quot;0&quot; class=&quot;SimpleLine&quot; pass=&quot;0&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;align_dash_pattern&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;capstyle&quot; type=&quot;QString&quot; value=&quot;square&quot;/>&lt;Option name=&quot;customdash&quot; type=&quot;QString&quot; value=&quot;5;2&quot;/>&lt;Option name=&quot;customdash_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;customdash_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;dash_pattern_offset&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;dash_pattern_offset_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;dash_pattern_offset_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;draw_inside_polygon&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;joinstyle&quot; type=&quot;QString&quot; value=&quot;bevel&quot;/>&lt;Option name=&quot;line_color&quot; type=&quot;QString&quot; value=&quot;60,60,60,255&quot;/>&lt;Option name=&quot;line_style&quot; type=&quot;QString&quot; value=&quot;solid&quot;/>&lt;Option name=&quot;line_width&quot; type=&quot;QString&quot; value=&quot;0.3&quot;/>&lt;Option name=&quot;line_width_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;offset&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;offset_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;offset_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;ring_filter&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;trim_distance_end&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;trim_distance_end_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;trim_distance_end_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;trim_distance_start&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;trim_distance_start_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;trim_distance_start_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;tweak_dash_pattern_on_corners&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;use_custom_dash&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;width_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;/Option>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; type=&quot;QString&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; type=&quot;QString&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>"/>
               <Option name="minLength" type="double" value="0"/>
               <Option name="minLengthMapUnitScale" type="QString" value="3x:0,0,0,0,0,0"/>
               <Option name="minLengthUnit" type="QString" value="MM"/>
@@ -170,20 +393,74 @@
     </rules>
   </labeling>
   <customproperties>
-    <property key="dualview/previewExpressions" value="osm_id"/>
-    <property key="embeddedWidgets/count" value="0"/>
-    <property key="variableNames"/>
-    <property key="variableValues"/>
+    <Option type="Map">
+      <Option name="dualview/previewExpressions" type="List">
+        <Option type="QString" value="osm_id"/>
+      </Option>
+      <Option name="embeddedWidgets/count" type="QString" value="0"/>
+      <Option name="variableNames"/>
+      <Option name="variableValues"/>
+    </Option>
   </customproperties>
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-    <DiagramCategory minScaleDenominator="0" minimumSize="0" backgroundColor="#ffffff" barWidth="5" sizeType="MM" penColor="#000000" rotationOffset="270" enabled="0" backgroundAlpha="255" maxScaleDenominator="1e+8" sizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up" penWidth="0" width="15" labelPlacementMethod="XHeight" scaleDependency="Area" opacity="1" scaleBasedVisibility="0" penAlpha="255" lineSizeScale="3x:0,0,0,0,0,0" height="15" lineSizeType="MM">
-      <fontProperties style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
+    <DiagramCategory spacingUnit="MM" maxScaleDenominator="1e+08" diagramOrientation="Up" lineSizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" penColor="#000000" opacity="1" minScaleDenominator="0" labelPlacementMethod="XHeight" backgroundAlpha="255" rotationOffset="270" height="15" penAlpha="255" direction="1" spacing="0" penWidth="0" backgroundColor="#ffffff" scaleBasedVisibility="0" showAxis="0" spacingUnitScale="3x:0,0,0,0,0,0" scaleDependency="Area" sizeType="MM" width="15" enabled="0" sizeScale="3x:0,0,0,0,0,0" barWidth="5" minimumSize="0">
+      <fontProperties bold="0" italic="0" strikethrough="0" description="Ubuntu,11,-1,5,50,0,0,0,0,0" style="" underline="0"/>
+      <attribute colorOpacity="1" color="#000000" label="" field=""/>
+      <axisSymbol>
+        <symbol name="" type="line" force_rhr="0" is_animated="0" alpha="1" frame_rate="10" clip_to_extent="1">
+          <data_defined_properties>
+            <Option type="Map">
+              <Option name="name" type="QString" value=""/>
+              <Option name="properties"/>
+              <Option name="type" type="QString" value="collection"/>
+            </Option>
+          </data_defined_properties>
+          <layer enabled="1" locked="0" class="SimpleLine" pass="0">
+            <Option type="Map">
+              <Option name="align_dash_pattern" type="QString" value="0"/>
+              <Option name="capstyle" type="QString" value="square"/>
+              <Option name="customdash" type="QString" value="5;2"/>
+              <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+              <Option name="customdash_unit" type="QString" value="MM"/>
+              <Option name="dash_pattern_offset" type="QString" value="0"/>
+              <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+              <Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
+              <Option name="draw_inside_polygon" type="QString" value="0"/>
+              <Option name="joinstyle" type="QString" value="bevel"/>
+              <Option name="line_color" type="QString" value="35,35,35,255"/>
+              <Option name="line_style" type="QString" value="solid"/>
+              <Option name="line_width" type="QString" value="0.26"/>
+              <Option name="line_width_unit" type="QString" value="MM"/>
+              <Option name="offset" type="QString" value="0"/>
+              <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+              <Option name="offset_unit" type="QString" value="MM"/>
+              <Option name="ring_filter" type="QString" value="0"/>
+              <Option name="trim_distance_end" type="QString" value="0"/>
+              <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+              <Option name="trim_distance_end_unit" type="QString" value="MM"/>
+              <Option name="trim_distance_start" type="QString" value="0"/>
+              <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+              <Option name="trim_distance_start_unit" type="QString" value="MM"/>
+              <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"/>
+              <Option name="use_custom_dash" type="QString" value="0"/>
+              <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            </Option>
+            <data_defined_properties>
+              <Option type="Map">
+                <Option name="name" type="QString" value=""/>
+                <Option name="properties"/>
+                <Option name="type" type="QString" value="collection"/>
+              </Option>
+            </data_defined_properties>
+          </layer>
+        </symbol>
+      </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings placement="0" zIndex="0" showAll="1" obstacle="0" linePlacementFlags="18" priority="0" dist="0">
+  <DiagramLayerSettings obstacle="0" placement="0" showAll="1" zIndex="0" linePlacementFlags="18" priority="0" dist="0">
     <properties>
       <Option type="Map">
         <Option name="name" type="QString" value=""/>
@@ -196,141 +473,101 @@
     <activeChecks/>
     <checkConfiguration/>
   </geometryOptions>
+  <legend type="default-vector" showLabelLegend="0"/>
+  <referencedLayers/>
   <fieldConfiguration>
-    <field name="fid">
+    <field name="fid" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="osm_id">
+    <field name="osm_id" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="name">
+    <field name="name" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="barrier">
+    <field name="barrier" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="highway">
+    <field name="highway" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="ref">
+    <field name="ref" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="address">
+    <field name="address" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="is_in">
+    <field name="is_in" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="place">
+    <field name="place" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="man_made">
+    <field name="man_made" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="other_tags">
+    <field name="other_tags" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="access:disabled">
+    <field name="capacity" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="wheelchair">
+    <field name="parking_space" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="surface">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="parking">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="fee">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="disabled">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="capacity:disabled">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="capacity">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="amenity">
+    <field name="amenity" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -339,122 +576,90 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias field="fid" index="0" name=""/>
-    <alias field="osm_id" index="1" name=""/>
-    <alias field="name" index="2" name=""/>
-    <alias field="barrier" index="3" name=""/>
-    <alias field="highway" index="4" name=""/>
-    <alias field="ref" index="5" name=""/>
-    <alias field="address" index="6" name=""/>
-    <alias field="is_in" index="7" name=""/>
-    <alias field="place" index="8" name=""/>
-    <alias field="man_made" index="9" name=""/>
-    <alias field="other_tags" index="10" name=""/>
-    <alias field="access:disabled" index="11" name=""/>
-    <alias field="wheelchair" index="12" name=""/>
-    <alias field="surface" index="13" name=""/>
-    <alias field="parking" index="14" name=""/>
-    <alias field="fee" index="15" name=""/>
-    <alias field="disabled" index="16" name=""/>
-    <alias field="capacity:disabled" index="17" name=""/>
-    <alias field="capacity" index="18" name=""/>
-    <alias field="amenity" index="19" name=""/>
+    <alias name="" index="0" field="fid"/>
+    <alias name="" index="1" field="osm_id"/>
+    <alias name="" index="2" field="name"/>
+    <alias name="" index="3" field="barrier"/>
+    <alias name="" index="4" field="highway"/>
+    <alias name="" index="5" field="ref"/>
+    <alias name="" index="6" field="address"/>
+    <alias name="" index="7" field="is_in"/>
+    <alias name="" index="8" field="place"/>
+    <alias name="" index="9" field="man_made"/>
+    <alias name="" index="10" field="other_tags"/>
+    <alias name="" index="11" field="capacity"/>
+    <alias name="" index="12" field="parking_space"/>
+    <alias name="" index="13" field="amenity"/>
   </aliases>
-  <excludeAttributesWMS/>
-  <excludeAttributesWFS/>
   <defaults>
-    <default field="fid" expression="" applyOnUpdate="0"/>
-    <default field="osm_id" expression="" applyOnUpdate="0"/>
-    <default field="name" expression="" applyOnUpdate="0"/>
-    <default field="barrier" expression="" applyOnUpdate="0"/>
-    <default field="highway" expression="" applyOnUpdate="0"/>
-    <default field="ref" expression="" applyOnUpdate="0"/>
-    <default field="address" expression="" applyOnUpdate="0"/>
-    <default field="is_in" expression="" applyOnUpdate="0"/>
-    <default field="place" expression="" applyOnUpdate="0"/>
-    <default field="man_made" expression="" applyOnUpdate="0"/>
-    <default field="other_tags" expression="" applyOnUpdate="0"/>
-    <default field="access:disabled" expression="" applyOnUpdate="0"/>
-    <default field="wheelchair" expression="" applyOnUpdate="0"/>
-    <default field="surface" expression="" applyOnUpdate="0"/>
-    <default field="parking" expression="" applyOnUpdate="0"/>
-    <default field="fee" expression="" applyOnUpdate="0"/>
-    <default field="disabled" expression="" applyOnUpdate="0"/>
-    <default field="capacity:disabled" expression="" applyOnUpdate="0"/>
-    <default field="capacity" expression="" applyOnUpdate="0"/>
-    <default field="amenity" expression="" applyOnUpdate="0"/>
+    <default expression="" field="fid" applyOnUpdate="0"/>
+    <default expression="" field="osm_id" applyOnUpdate="0"/>
+    <default expression="" field="name" applyOnUpdate="0"/>
+    <default expression="" field="barrier" applyOnUpdate="0"/>
+    <default expression="" field="highway" applyOnUpdate="0"/>
+    <default expression="" field="ref" applyOnUpdate="0"/>
+    <default expression="" field="address" applyOnUpdate="0"/>
+    <default expression="" field="is_in" applyOnUpdate="0"/>
+    <default expression="" field="place" applyOnUpdate="0"/>
+    <default expression="" field="man_made" applyOnUpdate="0"/>
+    <default expression="" field="other_tags" applyOnUpdate="0"/>
+    <default expression="" field="capacity" applyOnUpdate="0"/>
+    <default expression="" field="parking_space" applyOnUpdate="0"/>
+    <default expression="" field="amenity" applyOnUpdate="0"/>
   </defaults>
   <constraints>
-    <constraint unique_strength="1" field="fid" exp_strength="0" constraints="3" notnull_strength="1"/>
-    <constraint unique_strength="0" field="osm_id" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="name" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="barrier" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="highway" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="ref" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="address" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="is_in" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="place" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="man_made" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="other_tags" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="access:disabled" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="wheelchair" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="surface" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="parking" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="fee" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="disabled" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="capacity:disabled" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="capacity" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="amenity" exp_strength="0" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="1" notnull_strength="1" exp_strength="0" constraints="3" field="fid"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="osm_id"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="barrier"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="highway"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="ref"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="address"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="is_in"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="place"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="man_made"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="other_tags"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="capacity"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="parking_space"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="amenity"/>
   </constraints>
   <constraintExpressions>
-    <constraint field="fid" exp="" desc=""/>
-    <constraint field="osm_id" exp="" desc=""/>
-    <constraint field="name" exp="" desc=""/>
-    <constraint field="barrier" exp="" desc=""/>
-    <constraint field="highway" exp="" desc=""/>
-    <constraint field="ref" exp="" desc=""/>
-    <constraint field="address" exp="" desc=""/>
-    <constraint field="is_in" exp="" desc=""/>
-    <constraint field="place" exp="" desc=""/>
-    <constraint field="man_made" exp="" desc=""/>
-    <constraint field="other_tags" exp="" desc=""/>
-    <constraint field="access:disabled" exp="" desc=""/>
-    <constraint field="wheelchair" exp="" desc=""/>
-    <constraint field="surface" exp="" desc=""/>
-    <constraint field="parking" exp="" desc=""/>
-    <constraint field="fee" exp="" desc=""/>
-    <constraint field="disabled" exp="" desc=""/>
-    <constraint field="capacity:disabled" exp="" desc=""/>
-    <constraint field="capacity" exp="" desc=""/>
-    <constraint field="amenity" exp="" desc=""/>
+    <constraint desc="" exp="" field="fid"/>
+    <constraint desc="" exp="" field="osm_id"/>
+    <constraint desc="" exp="" field="name"/>
+    <constraint desc="" exp="" field="barrier"/>
+    <constraint desc="" exp="" field="highway"/>
+    <constraint desc="" exp="" field="ref"/>
+    <constraint desc="" exp="" field="address"/>
+    <constraint desc="" exp="" field="is_in"/>
+    <constraint desc="" exp="" field="place"/>
+    <constraint desc="" exp="" field="man_made"/>
+    <constraint desc="" exp="" field="other_tags"/>
+    <constraint desc="" exp="" field="capacity"/>
+    <constraint desc="" exp="" field="parking_space"/>
+    <constraint desc="" exp="" field="amenity"/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
-    <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+    <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
   </attributeactions>
-  <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+  <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
     <columns>
-      <column hidden="0" name="osm_id" type="field" width="-1"/>
-      <column hidden="0" name="name" type="field" width="-1"/>
-      <column hidden="0" name="highway" type="field" width="-1"/>
-      <column hidden="1" type="actions" width="-1"/>
-      <column hidden="0" name="wheelchair" type="field" width="-1"/>
-      <column hidden="0" name="amenity" type="field" width="-1"/>
-      <column hidden="0" name="place" type="field" width="-1"/>
-      <column hidden="0" name="man_made" type="field" width="-1"/>
-      <column hidden="0" name="ref" type="field" width="-1"/>
-      <column hidden="0" name="barrier" type="field" width="-1"/>
-      <column hidden="0" name="surface" type="field" width="-1"/>
-      <column hidden="0" name="disabled" type="field" width="-1"/>
-      <column hidden="0" name="fid" type="field" width="-1"/>
-      <column hidden="0" name="capacity:disabled" type="field" width="-1"/>
-      <column hidden="0" name="fee" type="field" width="-1"/>
-      <column hidden="0" name="parking" type="field" width="-1"/>
-      <column hidden="0" name="is_in" type="field" width="-1"/>
-      <column hidden="0" name="capacity" type="field" width="-1"/>
-      <column hidden="0" name="access:disabled" type="field" width="-1"/>
-      <column hidden="0" name="address" type="field" width="-1"/>
-      <column hidden="0" name="other_tags" type="field" width="-1"/>
+      <column name="osm_id" type="field" hidden="0" width="-1"/>
+      <column name="name" type="field" hidden="0" width="-1"/>
+      <column name="highway" type="field" hidden="0" width="-1"/>
+      <column type="actions" hidden="1" width="-1"/>
+      <column name="amenity" type="field" hidden="0" width="-1"/>
+      <column name="place" type="field" hidden="0" width="-1"/>
+      <column name="man_made" type="field" hidden="0" width="-1"/>
+      <column name="ref" type="field" hidden="0" width="-1"/>
+      <column name="barrier" type="field" hidden="0" width="-1"/>
+      <column name="fid" type="field" hidden="0" width="-1"/>
+      <column name="is_in" type="field" hidden="0" width="-1"/>
+      <column name="capacity" type="field" hidden="0" width="-1"/>
+      <column name="address" type="field" hidden="0" width="-1"/>
+      <column name="parking_space" type="field" hidden="0" width="-1"/>
+      <column name="other_tags" type="field" hidden="0" width="-1"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -486,1099 +691,1118 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>generatedlayout</editorlayout>
   <editable>
-    <field editable="1" name="IT:iva"/>
-    <field editable="1" name="SNCF:stop_name"/>
-    <field editable="1" name="STIF:zone"/>
-    <field editable="1" name="TMC:cid_58:tabcd_1:Class"/>
-    <field editable="1" name="TMC:cid_58:tabcd_1:Direction"/>
-    <field editable="1" name="TMC:cid_58:tabcd_1:Direction_positive_TMC:cid_58:tabcd_1:LCLversion"/>
-    <field editable="1" name="TMC:cid_58:tabcd_1:LCLversion"/>
-    <field editable="1" name="TMC:cid_58:tabcd_1:LocationCode"/>
-    <field editable="1" name="TMC:cid_58:tabcd_1:NextLocationCode"/>
-    <field editable="1" name="TMC:cid_58:tabcd_1:PrevLocationCode"/>
-    <field editable="1" name="_direction"/>
-    <field editable="1" name="abandoned:highway"/>
-    <field editable="1" name="abbreviation"/>
-    <field editable="1" name="access"/>
-    <field editable="1" name="access:disabled"/>
-    <field editable="1" name="access:fuel:lpg"/>
-    <field editable="1" name="additional_directions"/>
-    <field editable="1" name="addr.source:housenumber"/>
-    <field editable="1" name="addr.source:street"/>
-    <field editable="1" name="addr:city"/>
-    <field editable="1" name="addr:country"/>
-    <field editable="1" name="addr:housename"/>
-    <field editable="1" name="addr:housenumber"/>
-    <field editable="1" name="addr:old_housenumber"/>
-    <field editable="1" name="addr:postcode"/>
-    <field editable="1" name="addr:province"/>
-    <field editable="1" name="addr:state"/>
-    <field editable="1" name="addr:street"/>
-    <field editable="1" name="addr:suburb"/>
-    <field editable="1" name="addr:unit"/>
-    <field editable="1" name="address"/>
-    <field editable="1" name="advertising"/>
-    <field editable="1" name="advertising:text"/>
-    <field editable="1" name="aeroway"/>
-    <field editable="1" name="air_conditioning"/>
-    <field editable="1" name="alt_name"/>
-    <field editable="1" name="amenity"/>
-    <field editable="1" name="amperage"/>
-    <field editable="1" name="animated"/>
-    <field editable="1" name="annotaion"/>
-    <field editable="1" name="annotation"/>
-    <field editable="1" name="architect"/>
-    <field editable="1" name="artist_name"/>
-    <field editable="1" name="artwork_type"/>
-    <field editable="1" name="atm"/>
-    <field editable="1" name="attendent_service"/>
-    <field editable="1" name="authentication:nfc"/>
-    <field editable="1" name="authentication:none"/>
-    <field editable="1" name="authentication:phone_call"/>
-    <field editable="1" name="authentication:short_message"/>
-    <field editable="1" name="authorization"/>
-    <field editable="1" name="automated"/>
-    <field editable="1" name="baby"/>
-    <field editable="1" name="backrest"/>
-    <field editable="1" name="barrier"/>
-    <field editable="1" name="barrier:type"/>
-    <field editable="1" name="barrier_type"/>
-    <field editable="1" name="bdouble"/>
-    <field editable="1" name="bench"/>
-    <field editable="1" name="bic"/>
-    <field editable="1" name="bicycle"/>
-    <field editable="1" name="bicycle:conditional"/>
-    <field editable="1" name="bicycle:trailer"/>
-    <field editable="1" name="bicycle_parking"/>
-    <field editable="1" name="blind:description"/>
-    <field editable="1" name="blind:description:it"/>
-    <field editable="1" name="board_type"/>
-    <field editable="1" name="bollard"/>
-    <field editable="1" name="books"/>
-    <field editable="1" name="brand"/>
-    <field editable="1" name="brand:wikidata"/>
-    <field editable="1" name="brand:wikipedia"/>
-    <field editable="1" name="breakfast"/>
-    <field editable="1" name="brewery"/>
-    <field editable="1" name="bssid"/>
-    <field editable="1" name="building"/>
-    <field editable="1" name="building:levels"/>
-    <field editable="1" name="bus"/>
-    <field editable="1" name="bus_routes"/>
-    <field editable="1" name="butcher"/>
-    <field editable="1" name="button_operated"/>
-    <field editable="1" name="capacity"/>
-    <field editable="1" name="capacity:bus"/>
-    <field editable="1" name="capacity:car"/>
-    <field editable="1" name="capacity:disabled"/>
-    <field editable="1" name="capital"/>
-    <field editable="1" name="car"/>
-    <field editable="1" name="carpet:type"/>
-    <field editable="1" name="changing_table"/>
-    <field editable="1" name="charge"/>
-    <field editable="1" name="circumference"/>
-    <field editable="1" name="clothes"/>
-    <field editable="1" name="club"/>
-    <field editable="1" name="coach"/>
-    <field editable="1" name="collapsed"/>
-    <field editable="1" name="collection_times"/>
-    <field editable="1" name="colour"/>
-    <field editable="1" name="comment"/>
-    <field editable="1" name="comment:it"/>
-    <field editable="1" name="communication:mobile_phone"/>
-    <field editable="1" name="contact:email"/>
-    <field editable="1" name="contact:facebook"/>
-    <field editable="1" name="contact:fax"/>
-    <field editable="1" name="contact:mobile"/>
-    <field editable="1" name="contact:phone"/>
-    <field editable="1" name="contact:website"/>
-    <field editable="1" name="covered"/>
-    <field editable="1" name="craft"/>
-    <field editable="1" name="crossing"/>
-    <field editable="1" name="crossing:barrier"/>
-    <field editable="1" name="crossing:bell"/>
-    <field editable="1" name="crossing:light"/>
-    <field editable="1" name="crossing:supervision"/>
-    <field editable="1" name="crossing_1"/>
-    <field editable="1" name="crossing_ref"/>
-    <field editable="1" name="cuisine"/>
-    <field editable="1" name="cuisine:italian"/>
-    <field editable="1" name="cuisine:pizza"/>
-    <field editable="1" name="currency:EUR"/>
-    <field editable="1" name="curve_geometry"/>
-    <field editable="1" name="cycleway"/>
-    <field editable="1" name="cycleway:right"/>
-    <field editable="1" name="dance:teaching"/>
-    <field editable="1" name="danger:bicycle"/>
-    <field editable="1" name="danger:description"/>
-    <field editable="1" name="dataset"/>
-    <field editable="1" name="date"/>
-    <field editable="1" name="delivery"/>
-    <field editable="1" name="denomination"/>
-    <field editable="1" name="denotation"/>
-    <field editable="1" name="description"/>
-    <field editable="1" name="description:de"/>
-    <field editable="1" name="description:en"/>
-    <field editable="1" name="description:it"/>
-    <field editable="1" name="design"/>
-    <field editable="1" name="designation"/>
-    <field editable="1" name="destination"/>
-    <field editable="1" name="destination:ref"/>
-    <field editable="1" name="diameter_crown"/>
-    <field editable="1" name="diet:vegan"/>
-    <field editable="1" name="diet:vegetarian"/>
-    <field editable="1" name="direction"/>
-    <field editable="1" name="disabled"/>
-    <field editable="1" name="dismantled:amenity"/>
-    <field editable="1" name="dispensing"/>
-    <field editable="1" name="display"/>
-    <field editable="1" name="display:digital"/>
-    <field editable="1" name="distance"/>
-    <field editable="1" name="distance_marker"/>
-    <field editable="1" name="disused:amenity"/>
-    <field editable="1" name="disused:cuisine"/>
-    <field editable="1" name="disused:highway"/>
-    <field editable="1" name="disused:name"/>
-    <field editable="1" name="disused:railway"/>
-    <field editable="1" name="disused:shop"/>
-    <field editable="1" name="dog"/>
-    <field editable="1" name="drink:raw_milk"/>
-    <field editable="1" name="drink:water"/>
-    <field editable="1" name="drive_through"/>
-    <field editable="1" name="ele"/>
-    <field editable="1" name="electrified"/>
-    <field editable="1" name="email"/>
-    <field editable="1" name="emergency"/>
-    <field editable="1" name="enforcement"/>
-    <field editable="1" name="entrance"/>
-    <field editable="1" name="est_height"/>
-    <field editable="1" name="est_size"/>
-    <field editable="1" name="exit_to"/>
-    <field editable="1" name="facebook"/>
-    <field editable="1" name="fax"/>
-    <field editable="1" name="fee"/>
-    <field editable="1" name="fid"/>
-    <field editable="1" name="fire_hydrant:count"/>
-    <field editable="1" name="fire_hydrant:type"/>
-    <field editable="1" name="flashing_lights"/>
-    <field editable="1" name="foot"/>
-    <field editable="1" name="foot:conditional"/>
-    <field editable="1" name="ford"/>
-    <field editable="1" name="frequency"/>
-    <field editable="1" name="fuel"/>
-    <field editable="1" name="fuel:cng"/>
-    <field editable="1" name="fuel:lpg"/>
-    <field editable="1" name="full_id"/>
-    <field editable="1" name="furniture"/>
-    <field editable="1" name="gambling"/>
-    <field editable="1" name="gate:type"/>
-    <field editable="1" name="gate_type"/>
-    <field editable="1" name="gauge"/>
-    <field editable="1" name="generator:method"/>
-    <field editable="1" name="generator:output:electricity"/>
-    <field editable="1" name="generator:source"/>
-    <field editable="1" name="genus"/>
-    <field editable="1" name="genus:it"/>
-    <field editable="1" name="gfoss_id"/>
-    <field editable="1" name="government"/>
-    <field editable="1" name="gtfs:id"/>
-    <field editable="1" name="guest_house"/>
-    <field editable="1" name="hazard"/>
-    <field editable="1" name="hazard:wheelchair"/>
-    <field editable="1" name="hazmat:water"/>
-    <field editable="1" name="healthcare"/>
-    <field editable="1" name="healthcare:speciality"/>
-    <field editable="1" name="height"/>
-    <field editable="1" name="hgv"/>
-    <field editable="1" name="highway"/>
-    <field editable="1" name="hiking"/>
-    <field editable="1" name="historic"/>
-    <field editable="1" name="historic:name"/>
-    <field editable="1" name="historic:railway"/>
-    <field editable="1" name="horse"/>
-    <field editable="1" name="hour_off"/>
-    <field editable="1" name="hour_on"/>
-    <field editable="1" name="image"/>
-    <field editable="1" name="importance"/>
-    <field editable="1" name="incline"/>
-    <field editable="1" name="incline:across"/>
-    <field editable="1" name="indoor"/>
-    <field editable="1" name="information"/>
-    <field editable="1" name="inscription"/>
-    <field editable="1" name="internet_access"/>
-    <field editable="1" name="internet_access:fee"/>
-    <field editable="1" name="internet_access:operator"/>
-    <field editable="1" name="is_in"/>
-    <field editable="1" name="is_in:municipality"/>
-    <field editable="1" name="isced:level"/>
-    <field editable="1" name="junction"/>
-    <field editable="1" name="kerb"/>
-    <field editable="1" name="kerb:height"/>
-    <field editable="1" name="kerb:left"/>
-    <field editable="1" name="kerb:right"/>
-    <field editable="1" name="lamp_mount"/>
-    <field editable="1" name="lamp_type"/>
-    <field editable="1" name="lanes"/>
-    <field editable="1" name="layer"/>
-    <field editable="1" name="leaf_cycle"/>
-    <field editable="1" name="leaf_type"/>
-    <field editable="1" name="leisure"/>
-    <field editable="1" name="length"/>
-    <field editable="1" name="level"/>
-    <field editable="1" name="level:ref"/>
-    <field editable="1" name="level_crossing"/>
-    <field editable="1" name="levels"/>
-    <field editable="1" name="lit"/>
-    <field editable="1" name="location"/>
-    <field editable="1" name="luminous"/>
-    <field editable="1" name="man_made"/>
-    <field editable="1" name="manhole"/>
-    <field editable="1" name="manhole:height"/>
-    <field editable="1" name="manor:type"/>
-    <field editable="1" name="map_size"/>
-    <field editable="1" name="map_type"/>
-    <field editable="1" name="mapillary"/>
-    <field editable="1" name="marker"/>
-    <field editable="1" name="material"/>
-    <field editable="1" name="maxheight"/>
-    <field editable="1" name="maxspeed"/>
-    <field editable="1" name="maxspeed:hgv"/>
-    <field editable="1" name="maxweight"/>
-    <field editable="1" name="maxwidth"/>
-    <field editable="1" name="maxwidth:bicycle"/>
-    <field editable="1" name="maxwidth:physical"/>
-    <field editable="1" name="memorial"/>
-    <field editable="1" name="microbrewery"/>
-    <field editable="1" name="mindistance:hgv"/>
-    <field editable="1" name="monitoring:sky_brightness"/>
-    <field editable="1" name="monitoring:water_quality"/>
-    <field editable="1" name="monument"/>
-    <field editable="1" name="moped"/>
-    <field editable="1" name="motor_vehicle"/>
-    <field editable="1" name="motorcar"/>
-    <field editable="1" name="motorcycle"/>
-    <field editable="1" name="motorway"/>
-    <field editable="1" name="motorway_junction"/>
-    <field editable="1" name="mountain_pass"/>
-    <field editable="1" name="mtb"/>
-    <field editable="1" name="name"/>
-    <field editable="1" name="name:ar"/>
-    <field editable="1" name="name:be"/>
-    <field editable="1" name="name:botanical"/>
-    <field editable="1" name="name:ca"/>
-    <field editable="1" name="name:de"/>
-    <field editable="1" name="name:el"/>
-    <field editable="1" name="name:en"/>
-    <field editable="1" name="name:es"/>
-    <field editable="1" name="name:fi"/>
-    <field editable="1" name="name:fr"/>
-    <field editable="1" name="name:fur"/>
-    <field editable="1" name="name:hu"/>
-    <field editable="1" name="name:it"/>
-    <field editable="1" name="name:ja"/>
-    <field editable="1" name="name:la"/>
-    <field editable="1" name="name:nl"/>
-    <field editable="1" name="name:pl"/>
-    <field editable="1" name="name:pt"/>
-    <field editable="1" name="name:ro"/>
-    <field editable="1" name="name:ru"/>
-    <field editable="1" name="name:sk"/>
-    <field editable="1" name="name:sl"/>
-    <field editable="1" name="name:sv"/>
-    <field editable="1" name="name:uk"/>
-    <field editable="1" name="name:vec"/>
-    <field editable="1" name="name:zh"/>
-    <field editable="1" name="natural"/>
-    <field editable="1" name="network"/>
-    <field editable="1" name="noexit"/>
-    <field editable="1" name="noref"/>
-    <field editable="1" name="note:access"/>
-    <field editable="1" name="obstacle"/>
-    <field editable="1" name="obstacle:blind"/>
-    <field editable="1" name="obstacle:description"/>
-    <field editable="1" name="obstacle:foot"/>
-    <field editable="1" name="obstacle:wheelchair"/>
-    <field editable="1" name="odbl"/>
-    <field editable="1" name="office"/>
-    <field editable="1" name="official_name"/>
-    <field editable="1" name="old_name"/>
-    <field editable="1" name="old_name:de"/>
-    <field editable="1" name="oneway:bicycle"/>
-    <field editable="1" name="opening_hours"/>
-    <field editable="1" name="operator"/>
-    <field editable="1" name="operator:ref"/>
-    <field editable="1" name="operator:type"/>
-    <field editable="1" name="operator_1"/>
-    <field editable="1" name="organic"/>
-    <field editable="1" name="osm_id"/>
-    <field editable="1" name="osm_type"/>
-    <field editable="1" name="other_tags"/>
-    <field editable="1" name="outdoor_seating"/>
-    <field editable="1" name="oven"/>
-    <field editable="1" name="overtaking"/>
-    <field editable="1" name="overtaking:bus"/>
-    <field editable="1" name="overtaking:hgv"/>
-    <field editable="1" name="overtaking:trailer"/>
-    <field editable="1" name="park_ride"/>
-    <field editable="1" name="parking"/>
-    <field editable="1" name="parking:fee"/>
-    <field editable="1" name="passenger_lines"/>
-    <field editable="1" name="pastry"/>
-    <field editable="1" name="payment:account_cards"/>
-    <field editable="1" name="payment:bancomat"/>
-    <field editable="1" name="payment:bitcoin"/>
-    <field editable="1" name="payment:cash"/>
-    <field editable="1" name="payment:coins"/>
-    <field editable="1" name="payment:credit_cards"/>
-    <field editable="1" name="payment:debit_cards"/>
-    <field editable="1" name="payment:electronic_purses"/>
-    <field editable="1" name="payment:girocard"/>
-    <field editable="1" name="payment:mastercard"/>
-    <field editable="1" name="payment:notes"/>
-    <field editable="1" name="payment:telephone_cards"/>
-    <field editable="1" name="payment:visa"/>
-    <field editable="1" name="phone"/>
-    <field editable="1" name="phone_1"/>
-    <field editable="1" name="place"/>
-    <field editable="1" name="platforms"/>
-    <field editable="1" name="playground"/>
-    <field editable="1" name="pole"/>
-    <field editable="1" name="population"/>
-    <field editable="1" name="post_box:type"/>
-    <field editable="1" name="postal_code"/>
-    <field editable="1" name="power"/>
-    <field editable="1" name="power_supply"/>
-    <field editable="1" name="produce"/>
-    <field editable="1" name="proposed"/>
-    <field editable="1" name="psv"/>
-    <field editable="1" name="pub"/>
-    <field editable="1" name="public_transport"/>
-    <field editable="1" name="public_transport_tickets"/>
-    <field editable="1" name="rail"/>
-    <field editable="1" name="railway"/>
-    <field editable="1" name="railway:name:SBB"/>
-    <field editable="1" name="railway:name:SNCF"/>
-    <field editable="1" name="railway:position"/>
-    <field editable="1" name="railway:position:exact"/>
-    <field editable="1" name="railway:ref"/>
-    <field editable="1" name="railway:ref:DB"/>
-    <field editable="1" name="railway:ref:SBB"/>
-    <field editable="1" name="railway:ref:SNCF"/>
-    <field editable="1" name="ramp"/>
-    <field editable="1" name="recording:automated"/>
-    <field editable="1" name="recording:remote"/>
-    <field editable="1" name="recycling"/>
-    <field editable="1" name="recycling:aluminium"/>
-    <field editable="1" name="recycling:batteries"/>
-    <field editable="1" name="recycling:beverage_cartons"/>
-    <field editable="1" name="recycling:books"/>
-    <field editable="1" name="recycling:cans"/>
-    <field editable="1" name="recycling:cardboard"/>
-    <field editable="1" name="recycling:cartons"/>
-    <field editable="1" name="recycling:clothes"/>
-    <field editable="1" name="recycling:cooking_oil"/>
-    <field editable="1" name="recycling:drugs"/>
-    <field editable="1" name="recycling:electrical_appliances"/>
-    <field editable="1" name="recycling:garden_waste"/>
-    <field editable="1" name="recycling:glass"/>
-    <field editable="1" name="recycling:glass_bottles"/>
-    <field editable="1" name="recycling:green_waste"/>
-    <field editable="1" name="recycling:magazines"/>
-    <field editable="1" name="recycling:metal"/>
-    <field editable="1" name="recycling:newspaper"/>
-    <field editable="1" name="recycling:paper"/>
-    <field editable="1" name="recycling:paper_packaging"/>
-    <field editable="1" name="recycling:plastic"/>
-    <field editable="1" name="recycling:plastic_bottles"/>
-    <field editable="1" name="recycling:plastic_packaging"/>
-    <field editable="1" name="recycling:scrap_metal"/>
-    <field editable="1" name="recycling:small_appliances"/>
-    <field editable="1" name="recycling:waste"/>
-    <field editable="1" name="recycling:wood"/>
-    <field editable="1" name="recycling_type"/>
-    <field editable="1" name="ref"/>
-    <field editable="1" name="ref:FR:RATP"/>
-    <field editable="1" name="ref:FR:STIF"/>
-    <field editable="1" name="ref:FR:uic8"/>
-    <field editable="1" name="ref:IT:IRVV"/>
-    <field editable="1" name="ref:SNCF"/>
-    <field editable="1" name="ref:isil"/>
-    <field editable="1" name="ref:it:vat"/>
-    <field editable="1" name="ref:mise"/>
-    <field editable="1" name="ref:terna"/>
-    <field editable="1" name="ref:vatin"/>
-    <field editable="1" name="religion"/>
-    <field editable="1" name="rental"/>
-    <field editable="1" name="repair"/>
-    <field editable="1" name="restaurant:type:it"/>
-    <field editable="1" name="rooms"/>
-    <field editable="1" name="route"/>
-    <field editable="1" name="route_ref"/>
-    <field editable="1" name="route_ref:FR:RER_D"/>
-    <field editable="1" name="safety_inspection"/>
-    <field editable="1" name="sale"/>
-    <field editable="1" name="sanitary_dump_station"/>
-    <field editable="1" name="scooter"/>
-    <field editable="1" name="seasonal"/>
-    <field editable="1" name="seats"/>
-    <field editable="1" name="second_hand"/>
-    <field editable="1" name="segregated"/>
-    <field editable="1" name="self_service"/>
-    <field editable="1" name="sells"/>
-    <field editable="1" name="sells:tobacco"/>
-    <field editable="1" name="service"/>
-    <field editable="1" name="service:bicycle:cleaning"/>
-    <field editable="1" name="service:bicycle:diy"/>
-    <field editable="1" name="service:bicycle:pump"/>
-    <field editable="1" name="service:bicycle:rental"/>
-    <field editable="1" name="service:bicycle:repair"/>
-    <field editable="1" name="service:bicycle:retail"/>
-    <field editable="1" name="service:bicycle:second_hand"/>
-    <field editable="1" name="service_times"/>
-    <field editable="1" name="shelter"/>
-    <field editable="1" name="shop"/>
-    <field editable="1" name="shop:bicycle:market"/>
-    <field editable="1" name="shop:bicycle:pump"/>
-    <field editable="1" name="shop:bicycle:rental"/>
-    <field editable="1" name="shop:bicycle:repair"/>
-    <field editable="1" name="shop:bicycle:retail"/>
-    <field editable="1" name="shop:bicycle:second_hand"/>
-    <field editable="1" name="shop_1"/>
-    <field editable="1" name="sides"/>
-    <field editable="1" name="sloped_curb"/>
-    <field editable="1" name="smoking"/>
-    <field editable="1" name="smoothness"/>
-    <field editable="1" name="social_facility"/>
-    <field editable="1" name="socket:chademo"/>
-    <field editable="1" name="socket:schuko"/>
-    <field editable="1" name="socket:type2"/>
-    <field editable="1" name="source:access"/>
-    <field editable="1" name="source:date"/>
-    <field editable="1" name="source:def"/>
-    <field editable="1" name="source:ele"/>
-    <field editable="1" name="source:maxheight"/>
-    <field editable="1" name="source:maxspeed"/>
-    <field editable="1" name="source:position"/>
-    <field editable="1" name="species"/>
-    <field editable="1" name="species:en"/>
-    <field editable="1" name="species:it"/>
-    <field editable="1" name="sport"/>
-    <field editable="1" name="stamps"/>
-    <field editable="1" name="stars"/>
-    <field editable="1" name="start_date"/>
-    <field editable="1" name="stop"/>
-    <field editable="1" name="street_cabinet"/>
-    <field editable="1" name="structure"/>
-    <field editable="1" name="substation"/>
-    <field editable="1" name="supervised"/>
-    <field editable="1" name="support"/>
-    <field editable="1" name="surface"/>
-    <field editable="1" name="surveillance"/>
-    <field editable="1" name="survey:date"/>
-    <field editable="1" name="swing_gate:type"/>
-    <field editable="1" name="tactile_paving"/>
-    <field editable="1" name="takeaway"/>
-    <field editable="1" name="tasting"/>
-    <field editable="1" name="tmc"/>
-    <field editable="1" name="tobacco"/>
-    <field editable="1" name="toilets"/>
-    <field editable="1" name="toilets:access"/>
-    <field editable="1" name="toilets:position"/>
-    <field editable="1" name="toilets:wheelchair"/>
-    <field editable="1" name="toll"/>
-    <field editable="1" name="tourism"/>
-    <field editable="1" name="tourist_bus"/>
-    <field editable="1" name="towards"/>
-    <field editable="1" name="tower"/>
-    <field editable="1" name="tower:type"/>
-    <field editable="1" name="traffic_calming"/>
-    <field editable="1" name="traffic_sign"/>
-    <field editable="1" name="traffic_sign:forward"/>
-    <field editable="1" name="traffic_sign:position"/>
-    <field editable="1" name="traffic_signals"/>
-    <field editable="1" name="traffic_signals:direction"/>
-    <field editable="1" name="traffic_signals:light"/>
-    <field editable="1" name="traffic_signals:sound"/>
-    <field editable="1" name="train"/>
-    <field editable="1" name="tram"/>
-    <field editable="1" name="trolleybus"/>
-    <field editable="1" name="truck"/>
-    <field editable="1" name="turn:lanes"/>
-    <field editable="1" name="type"/>
-    <field editable="1" name="type:RATP"/>
-    <field editable="1" name="uic_name"/>
-    <field editable="1" name="uic_ref"/>
-    <field editable="1" name="unisex"/>
-    <field editable="1" name="url"/>
-    <field editable="1" name="usage"/>
-    <field editable="1" name="vehicle"/>
-    <field editable="1" name="vehicle:forward:conditional"/>
-    <field editable="1" name="vehicles"/>
-    <field editable="1" name="vending"/>
-    <field editable="1" name="vending_machine"/>
-    <field editable="1" name="visibility"/>
-    <field editable="1" name="voltage"/>
-    <field editable="1" name="waste"/>
-    <field editable="1" name="waterway"/>
-    <field editable="1" name="website"/>
-    <field editable="1" name="wheelchair"/>
-    <field editable="1" name="wheelchair:description"/>
-    <field editable="1" name="wheelchair:description:en"/>
-    <field editable="1" name="wheelchair:description:it"/>
-    <field editable="1" name="width"/>
-    <field editable="1" name="width:bicycle"/>
-    <field editable="1" name="wifi"/>
-    <field editable="1" name="wikidata"/>
-    <field editable="1" name="wikipedia"/>
+    <field name="IT:iva" editable="1"/>
+    <field name="SNCF:stop_name" editable="1"/>
+    <field name="STIF:zone" editable="1"/>
+    <field name="TMC:cid_58:tabcd_1:Class" editable="1"/>
+    <field name="TMC:cid_58:tabcd_1:Direction" editable="1"/>
+    <field name="TMC:cid_58:tabcd_1:Direction_positive_TMC:cid_58:tabcd_1:LCLversion" editable="1"/>
+    <field name="TMC:cid_58:tabcd_1:LCLversion" editable="1"/>
+    <field name="TMC:cid_58:tabcd_1:LocationCode" editable="1"/>
+    <field name="TMC:cid_58:tabcd_1:NextLocationCode" editable="1"/>
+    <field name="TMC:cid_58:tabcd_1:PrevLocationCode" editable="1"/>
+    <field name="_direction" editable="1"/>
+    <field name="abandoned:highway" editable="1"/>
+    <field name="abbreviation" editable="1"/>
+    <field name="access" editable="1"/>
+    <field name="access:disabled" editable="1"/>
+    <field name="access:fuel:lpg" editable="1"/>
+    <field name="additional_directions" editable="1"/>
+    <field name="addr.source:housenumber" editable="1"/>
+    <field name="addr.source:street" editable="1"/>
+    <field name="addr:city" editable="1"/>
+    <field name="addr:country" editable="1"/>
+    <field name="addr:housename" editable="1"/>
+    <field name="addr:housenumber" editable="1"/>
+    <field name="addr:old_housenumber" editable="1"/>
+    <field name="addr:postcode" editable="1"/>
+    <field name="addr:province" editable="1"/>
+    <field name="addr:state" editable="1"/>
+    <field name="addr:street" editable="1"/>
+    <field name="addr:suburb" editable="1"/>
+    <field name="addr:unit" editable="1"/>
+    <field name="address" editable="1"/>
+    <field name="advertising" editable="1"/>
+    <field name="advertising:text" editable="1"/>
+    <field name="aeroway" editable="1"/>
+    <field name="air_conditioning" editable="1"/>
+    <field name="alt_name" editable="1"/>
+    <field name="amenity" editable="1"/>
+    <field name="amperage" editable="1"/>
+    <field name="animated" editable="1"/>
+    <field name="annotaion" editable="1"/>
+    <field name="annotation" editable="1"/>
+    <field name="architect" editable="1"/>
+    <field name="artist_name" editable="1"/>
+    <field name="artwork_type" editable="1"/>
+    <field name="atm" editable="1"/>
+    <field name="attendent_service" editable="1"/>
+    <field name="authentication:nfc" editable="1"/>
+    <field name="authentication:none" editable="1"/>
+    <field name="authentication:phone_call" editable="1"/>
+    <field name="authentication:short_message" editable="1"/>
+    <field name="authorization" editable="1"/>
+    <field name="automated" editable="1"/>
+    <field name="baby" editable="1"/>
+    <field name="backrest" editable="1"/>
+    <field name="barrier" editable="1"/>
+    <field name="barrier:type" editable="1"/>
+    <field name="barrier_type" editable="1"/>
+    <field name="bdouble" editable="1"/>
+    <field name="bench" editable="1"/>
+    <field name="bic" editable="1"/>
+    <field name="bicycle" editable="1"/>
+    <field name="bicycle:conditional" editable="1"/>
+    <field name="bicycle:trailer" editable="1"/>
+    <field name="bicycle_parking" editable="1"/>
+    <field name="blind:description" editable="1"/>
+    <field name="blind:description:it" editable="1"/>
+    <field name="board_type" editable="1"/>
+    <field name="bollard" editable="1"/>
+    <field name="books" editable="1"/>
+    <field name="brand" editable="1"/>
+    <field name="brand:wikidata" editable="1"/>
+    <field name="brand:wikipedia" editable="1"/>
+    <field name="breakfast" editable="1"/>
+    <field name="brewery" editable="1"/>
+    <field name="bssid" editable="1"/>
+    <field name="building" editable="1"/>
+    <field name="building:levels" editable="1"/>
+    <field name="bus" editable="1"/>
+    <field name="bus_routes" editable="1"/>
+    <field name="butcher" editable="1"/>
+    <field name="button_operated" editable="1"/>
+    <field name="capacity" editable="1"/>
+    <field name="capacity:bus" editable="1"/>
+    <field name="capacity:car" editable="1"/>
+    <field name="capacity:disabled" editable="1"/>
+    <field name="capital" editable="1"/>
+    <field name="car" editable="1"/>
+    <field name="carpet:type" editable="1"/>
+    <field name="changing_table" editable="1"/>
+    <field name="charge" editable="1"/>
+    <field name="circumference" editable="1"/>
+    <field name="clothes" editable="1"/>
+    <field name="club" editable="1"/>
+    <field name="coach" editable="1"/>
+    <field name="collapsed" editable="1"/>
+    <field name="collection_times" editable="1"/>
+    <field name="colour" editable="1"/>
+    <field name="comment" editable="1"/>
+    <field name="comment:it" editable="1"/>
+    <field name="communication:mobile_phone" editable="1"/>
+    <field name="contact:email" editable="1"/>
+    <field name="contact:facebook" editable="1"/>
+    <field name="contact:fax" editable="1"/>
+    <field name="contact:mobile" editable="1"/>
+    <field name="contact:phone" editable="1"/>
+    <field name="contact:website" editable="1"/>
+    <field name="covered" editable="1"/>
+    <field name="craft" editable="1"/>
+    <field name="crossing" editable="1"/>
+    <field name="crossing:barrier" editable="1"/>
+    <field name="crossing:bell" editable="1"/>
+    <field name="crossing:light" editable="1"/>
+    <field name="crossing:supervision" editable="1"/>
+    <field name="crossing_1" editable="1"/>
+    <field name="crossing_ref" editable="1"/>
+    <field name="cuisine" editable="1"/>
+    <field name="cuisine:italian" editable="1"/>
+    <field name="cuisine:pizza" editable="1"/>
+    <field name="currency:EUR" editable="1"/>
+    <field name="curve_geometry" editable="1"/>
+    <field name="cycleway" editable="1"/>
+    <field name="cycleway:right" editable="1"/>
+    <field name="dance:teaching" editable="1"/>
+    <field name="danger:bicycle" editable="1"/>
+    <field name="danger:description" editable="1"/>
+    <field name="dataset" editable="1"/>
+    <field name="date" editable="1"/>
+    <field name="delivery" editable="1"/>
+    <field name="denomination" editable="1"/>
+    <field name="denotation" editable="1"/>
+    <field name="description" editable="1"/>
+    <field name="description:de" editable="1"/>
+    <field name="description:en" editable="1"/>
+    <field name="description:it" editable="1"/>
+    <field name="design" editable="1"/>
+    <field name="designation" editable="1"/>
+    <field name="destination" editable="1"/>
+    <field name="destination:ref" editable="1"/>
+    <field name="diameter_crown" editable="1"/>
+    <field name="diet:vegan" editable="1"/>
+    <field name="diet:vegetarian" editable="1"/>
+    <field name="direction" editable="1"/>
+    <field name="disabled" editable="1"/>
+    <field name="dismantled:amenity" editable="1"/>
+    <field name="dispensing" editable="1"/>
+    <field name="display" editable="1"/>
+    <field name="display:digital" editable="1"/>
+    <field name="distance" editable="1"/>
+    <field name="distance_marker" editable="1"/>
+    <field name="disused:amenity" editable="1"/>
+    <field name="disused:cuisine" editable="1"/>
+    <field name="disused:highway" editable="1"/>
+    <field name="disused:name" editable="1"/>
+    <field name="disused:railway" editable="1"/>
+    <field name="disused:shop" editable="1"/>
+    <field name="dog" editable="1"/>
+    <field name="drink:raw_milk" editable="1"/>
+    <field name="drink:water" editable="1"/>
+    <field name="drive_through" editable="1"/>
+    <field name="ele" editable="1"/>
+    <field name="electrified" editable="1"/>
+    <field name="email" editable="1"/>
+    <field name="emergency" editable="1"/>
+    <field name="enforcement" editable="1"/>
+    <field name="entrance" editable="1"/>
+    <field name="est_height" editable="1"/>
+    <field name="est_size" editable="1"/>
+    <field name="exit_to" editable="1"/>
+    <field name="facebook" editable="1"/>
+    <field name="fax" editable="1"/>
+    <field name="fee" editable="1"/>
+    <field name="fid" editable="1"/>
+    <field name="fire_hydrant:count" editable="1"/>
+    <field name="fire_hydrant:type" editable="1"/>
+    <field name="flashing_lights" editable="1"/>
+    <field name="foot" editable="1"/>
+    <field name="foot:conditional" editable="1"/>
+    <field name="ford" editable="1"/>
+    <field name="frequency" editable="1"/>
+    <field name="fuel" editable="1"/>
+    <field name="fuel:cng" editable="1"/>
+    <field name="fuel:lpg" editable="1"/>
+    <field name="full_id" editable="1"/>
+    <field name="furniture" editable="1"/>
+    <field name="gambling" editable="1"/>
+    <field name="gate:type" editable="1"/>
+    <field name="gate_type" editable="1"/>
+    <field name="gauge" editable="1"/>
+    <field name="generator:method" editable="1"/>
+    <field name="generator:output:electricity" editable="1"/>
+    <field name="generator:source" editable="1"/>
+    <field name="genus" editable="1"/>
+    <field name="genus:it" editable="1"/>
+    <field name="gfoss_id" editable="1"/>
+    <field name="government" editable="1"/>
+    <field name="gtfs:id" editable="1"/>
+    <field name="guest_house" editable="1"/>
+    <field name="hazard" editable="1"/>
+    <field name="hazard:wheelchair" editable="1"/>
+    <field name="hazmat:water" editable="1"/>
+    <field name="healthcare" editable="1"/>
+    <field name="healthcare:speciality" editable="1"/>
+    <field name="height" editable="1"/>
+    <field name="hgv" editable="1"/>
+    <field name="highway" editable="1"/>
+    <field name="hiking" editable="1"/>
+    <field name="historic" editable="1"/>
+    <field name="historic:name" editable="1"/>
+    <field name="historic:railway" editable="1"/>
+    <field name="horse" editable="1"/>
+    <field name="hour_off" editable="1"/>
+    <field name="hour_on" editable="1"/>
+    <field name="image" editable="1"/>
+    <field name="importance" editable="1"/>
+    <field name="incline" editable="1"/>
+    <field name="incline:across" editable="1"/>
+    <field name="indoor" editable="1"/>
+    <field name="information" editable="1"/>
+    <field name="inscription" editable="1"/>
+    <field name="internet_access" editable="1"/>
+    <field name="internet_access:fee" editable="1"/>
+    <field name="internet_access:operator" editable="1"/>
+    <field name="is_in" editable="1"/>
+    <field name="is_in:municipality" editable="1"/>
+    <field name="isced:level" editable="1"/>
+    <field name="junction" editable="1"/>
+    <field name="kerb" editable="1"/>
+    <field name="kerb:height" editable="1"/>
+    <field name="kerb:left" editable="1"/>
+    <field name="kerb:right" editable="1"/>
+    <field name="lamp_mount" editable="1"/>
+    <field name="lamp_type" editable="1"/>
+    <field name="lanes" editable="1"/>
+    <field name="layer" editable="1"/>
+    <field name="leaf_cycle" editable="1"/>
+    <field name="leaf_type" editable="1"/>
+    <field name="leisure" editable="1"/>
+    <field name="length" editable="1"/>
+    <field name="level" editable="1"/>
+    <field name="level:ref" editable="1"/>
+    <field name="level_crossing" editable="1"/>
+    <field name="levels" editable="1"/>
+    <field name="lit" editable="1"/>
+    <field name="location" editable="1"/>
+    <field name="luminous" editable="1"/>
+    <field name="man_made" editable="1"/>
+    <field name="manhole" editable="1"/>
+    <field name="manhole:height" editable="1"/>
+    <field name="manor:type" editable="1"/>
+    <field name="map_size" editable="1"/>
+    <field name="map_type" editable="1"/>
+    <field name="mapillary" editable="1"/>
+    <field name="marker" editable="1"/>
+    <field name="material" editable="1"/>
+    <field name="maxheight" editable="1"/>
+    <field name="maxspeed" editable="1"/>
+    <field name="maxspeed:hgv" editable="1"/>
+    <field name="maxweight" editable="1"/>
+    <field name="maxwidth" editable="1"/>
+    <field name="maxwidth:bicycle" editable="1"/>
+    <field name="maxwidth:physical" editable="1"/>
+    <field name="memorial" editable="1"/>
+    <field name="microbrewery" editable="1"/>
+    <field name="mindistance:hgv" editable="1"/>
+    <field name="monitoring:sky_brightness" editable="1"/>
+    <field name="monitoring:water_quality" editable="1"/>
+    <field name="monument" editable="1"/>
+    <field name="moped" editable="1"/>
+    <field name="motor_vehicle" editable="1"/>
+    <field name="motorcar" editable="1"/>
+    <field name="motorcycle" editable="1"/>
+    <field name="motorway" editable="1"/>
+    <field name="motorway_junction" editable="1"/>
+    <field name="mountain_pass" editable="1"/>
+    <field name="mtb" editable="1"/>
+    <field name="name" editable="1"/>
+    <field name="name:ar" editable="1"/>
+    <field name="name:be" editable="1"/>
+    <field name="name:botanical" editable="1"/>
+    <field name="name:ca" editable="1"/>
+    <field name="name:de" editable="1"/>
+    <field name="name:el" editable="1"/>
+    <field name="name:en" editable="1"/>
+    <field name="name:es" editable="1"/>
+    <field name="name:fi" editable="1"/>
+    <field name="name:fr" editable="1"/>
+    <field name="name:fur" editable="1"/>
+    <field name="name:hu" editable="1"/>
+    <field name="name:it" editable="1"/>
+    <field name="name:ja" editable="1"/>
+    <field name="name:la" editable="1"/>
+    <field name="name:nl" editable="1"/>
+    <field name="name:pl" editable="1"/>
+    <field name="name:pt" editable="1"/>
+    <field name="name:ro" editable="1"/>
+    <field name="name:ru" editable="1"/>
+    <field name="name:sk" editable="1"/>
+    <field name="name:sl" editable="1"/>
+    <field name="name:sv" editable="1"/>
+    <field name="name:uk" editable="1"/>
+    <field name="name:vec" editable="1"/>
+    <field name="name:zh" editable="1"/>
+    <field name="natural" editable="1"/>
+    <field name="network" editable="1"/>
+    <field name="noexit" editable="1"/>
+    <field name="noref" editable="1"/>
+    <field name="note:access" editable="1"/>
+    <field name="obstacle" editable="1"/>
+    <field name="obstacle:blind" editable="1"/>
+    <field name="obstacle:description" editable="1"/>
+    <field name="obstacle:foot" editable="1"/>
+    <field name="obstacle:wheelchair" editable="1"/>
+    <field name="odbl" editable="1"/>
+    <field name="office" editable="1"/>
+    <field name="official_name" editable="1"/>
+    <field name="old_name" editable="1"/>
+    <field name="old_name:de" editable="1"/>
+    <field name="oneway:bicycle" editable="1"/>
+    <field name="opening_hours" editable="1"/>
+    <field name="operator" editable="1"/>
+    <field name="operator:ref" editable="1"/>
+    <field name="operator:type" editable="1"/>
+    <field name="operator_1" editable="1"/>
+    <field name="organic" editable="1"/>
+    <field name="osm_id" editable="1"/>
+    <field name="osm_type" editable="1"/>
+    <field name="other_tags" editable="1"/>
+    <field name="outdoor_seating" editable="1"/>
+    <field name="oven" editable="1"/>
+    <field name="overtaking" editable="1"/>
+    <field name="overtaking:bus" editable="1"/>
+    <field name="overtaking:hgv" editable="1"/>
+    <field name="overtaking:trailer" editable="1"/>
+    <field name="park_ride" editable="1"/>
+    <field name="parking" editable="1"/>
+    <field name="parking:fee" editable="1"/>
+    <field name="parking_space" editable="1"/>
+    <field name="passenger_lines" editable="1"/>
+    <field name="pastry" editable="1"/>
+    <field name="payment:account_cards" editable="1"/>
+    <field name="payment:bancomat" editable="1"/>
+    <field name="payment:bitcoin" editable="1"/>
+    <field name="payment:cash" editable="1"/>
+    <field name="payment:coins" editable="1"/>
+    <field name="payment:credit_cards" editable="1"/>
+    <field name="payment:debit_cards" editable="1"/>
+    <field name="payment:electronic_purses" editable="1"/>
+    <field name="payment:girocard" editable="1"/>
+    <field name="payment:mastercard" editable="1"/>
+    <field name="payment:notes" editable="1"/>
+    <field name="payment:telephone_cards" editable="1"/>
+    <field name="payment:visa" editable="1"/>
+    <field name="phone" editable="1"/>
+    <field name="phone_1" editable="1"/>
+    <field name="place" editable="1"/>
+    <field name="platforms" editable="1"/>
+    <field name="playground" editable="1"/>
+    <field name="pole" editable="1"/>
+    <field name="population" editable="1"/>
+    <field name="post_box:type" editable="1"/>
+    <field name="postal_code" editable="1"/>
+    <field name="power" editable="1"/>
+    <field name="power_supply" editable="1"/>
+    <field name="produce" editable="1"/>
+    <field name="proposed" editable="1"/>
+    <field name="psv" editable="1"/>
+    <field name="pub" editable="1"/>
+    <field name="public_transport" editable="1"/>
+    <field name="public_transport_tickets" editable="1"/>
+    <field name="rail" editable="1"/>
+    <field name="railway" editable="1"/>
+    <field name="railway:name:SBB" editable="1"/>
+    <field name="railway:name:SNCF" editable="1"/>
+    <field name="railway:position" editable="1"/>
+    <field name="railway:position:exact" editable="1"/>
+    <field name="railway:ref" editable="1"/>
+    <field name="railway:ref:DB" editable="1"/>
+    <field name="railway:ref:SBB" editable="1"/>
+    <field name="railway:ref:SNCF" editable="1"/>
+    <field name="ramp" editable="1"/>
+    <field name="recording:automated" editable="1"/>
+    <field name="recording:remote" editable="1"/>
+    <field name="recycling" editable="1"/>
+    <field name="recycling:aluminium" editable="1"/>
+    <field name="recycling:batteries" editable="1"/>
+    <field name="recycling:beverage_cartons" editable="1"/>
+    <field name="recycling:books" editable="1"/>
+    <field name="recycling:cans" editable="1"/>
+    <field name="recycling:cardboard" editable="1"/>
+    <field name="recycling:cartons" editable="1"/>
+    <field name="recycling:clothes" editable="1"/>
+    <field name="recycling:cooking_oil" editable="1"/>
+    <field name="recycling:drugs" editable="1"/>
+    <field name="recycling:electrical_appliances" editable="1"/>
+    <field name="recycling:garden_waste" editable="1"/>
+    <field name="recycling:glass" editable="1"/>
+    <field name="recycling:glass_bottles" editable="1"/>
+    <field name="recycling:green_waste" editable="1"/>
+    <field name="recycling:magazines" editable="1"/>
+    <field name="recycling:metal" editable="1"/>
+    <field name="recycling:newspaper" editable="1"/>
+    <field name="recycling:paper" editable="1"/>
+    <field name="recycling:paper_packaging" editable="1"/>
+    <field name="recycling:plastic" editable="1"/>
+    <field name="recycling:plastic_bottles" editable="1"/>
+    <field name="recycling:plastic_packaging" editable="1"/>
+    <field name="recycling:scrap_metal" editable="1"/>
+    <field name="recycling:small_appliances" editable="1"/>
+    <field name="recycling:waste" editable="1"/>
+    <field name="recycling:wood" editable="1"/>
+    <field name="recycling_type" editable="1"/>
+    <field name="ref" editable="1"/>
+    <field name="ref:FR:RATP" editable="1"/>
+    <field name="ref:FR:STIF" editable="1"/>
+    <field name="ref:FR:uic8" editable="1"/>
+    <field name="ref:IT:IRVV" editable="1"/>
+    <field name="ref:SNCF" editable="1"/>
+    <field name="ref:isil" editable="1"/>
+    <field name="ref:it:vat" editable="1"/>
+    <field name="ref:mise" editable="1"/>
+    <field name="ref:terna" editable="1"/>
+    <field name="ref:vatin" editable="1"/>
+    <field name="religion" editable="1"/>
+    <field name="rental" editable="1"/>
+    <field name="repair" editable="1"/>
+    <field name="restaurant:type:it" editable="1"/>
+    <field name="rooms" editable="1"/>
+    <field name="route" editable="1"/>
+    <field name="route_ref" editable="1"/>
+    <field name="route_ref:FR:RER_D" editable="1"/>
+    <field name="safety_inspection" editable="1"/>
+    <field name="sale" editable="1"/>
+    <field name="sanitary_dump_station" editable="1"/>
+    <field name="scooter" editable="1"/>
+    <field name="seasonal" editable="1"/>
+    <field name="seats" editable="1"/>
+    <field name="second_hand" editable="1"/>
+    <field name="segregated" editable="1"/>
+    <field name="self_service" editable="1"/>
+    <field name="sells" editable="1"/>
+    <field name="sells:tobacco" editable="1"/>
+    <field name="service" editable="1"/>
+    <field name="service:bicycle:cleaning" editable="1"/>
+    <field name="service:bicycle:diy" editable="1"/>
+    <field name="service:bicycle:pump" editable="1"/>
+    <field name="service:bicycle:rental" editable="1"/>
+    <field name="service:bicycle:repair" editable="1"/>
+    <field name="service:bicycle:retail" editable="1"/>
+    <field name="service:bicycle:second_hand" editable="1"/>
+    <field name="service_times" editable="1"/>
+    <field name="shelter" editable="1"/>
+    <field name="shop" editable="1"/>
+    <field name="shop:bicycle:market" editable="1"/>
+    <field name="shop:bicycle:pump" editable="1"/>
+    <field name="shop:bicycle:rental" editable="1"/>
+    <field name="shop:bicycle:repair" editable="1"/>
+    <field name="shop:bicycle:retail" editable="1"/>
+    <field name="shop:bicycle:second_hand" editable="1"/>
+    <field name="shop_1" editable="1"/>
+    <field name="sides" editable="1"/>
+    <field name="sloped_curb" editable="1"/>
+    <field name="smoking" editable="1"/>
+    <field name="smoothness" editable="1"/>
+    <field name="social_facility" editable="1"/>
+    <field name="socket:chademo" editable="1"/>
+    <field name="socket:schuko" editable="1"/>
+    <field name="socket:type2" editable="1"/>
+    <field name="source:access" editable="1"/>
+    <field name="source:date" editable="1"/>
+    <field name="source:def" editable="1"/>
+    <field name="source:ele" editable="1"/>
+    <field name="source:maxheight" editable="1"/>
+    <field name="source:maxspeed" editable="1"/>
+    <field name="source:position" editable="1"/>
+    <field name="species" editable="1"/>
+    <field name="species:en" editable="1"/>
+    <field name="species:it" editable="1"/>
+    <field name="sport" editable="1"/>
+    <field name="stamps" editable="1"/>
+    <field name="stars" editable="1"/>
+    <field name="start_date" editable="1"/>
+    <field name="stop" editable="1"/>
+    <field name="street_cabinet" editable="1"/>
+    <field name="structure" editable="1"/>
+    <field name="substation" editable="1"/>
+    <field name="supervised" editable="1"/>
+    <field name="support" editable="1"/>
+    <field name="surface" editable="1"/>
+    <field name="surveillance" editable="1"/>
+    <field name="survey:date" editable="1"/>
+    <field name="swing_gate:type" editable="1"/>
+    <field name="tactile_paving" editable="1"/>
+    <field name="takeaway" editable="1"/>
+    <field name="tasting" editable="1"/>
+    <field name="tmc" editable="1"/>
+    <field name="tobacco" editable="1"/>
+    <field name="toilets" editable="1"/>
+    <field name="toilets:access" editable="1"/>
+    <field name="toilets:position" editable="1"/>
+    <field name="toilets:wheelchair" editable="1"/>
+    <field name="toll" editable="1"/>
+    <field name="tourism" editable="1"/>
+    <field name="tourist_bus" editable="1"/>
+    <field name="towards" editable="1"/>
+    <field name="tower" editable="1"/>
+    <field name="tower:type" editable="1"/>
+    <field name="traffic_calming" editable="1"/>
+    <field name="traffic_sign" editable="1"/>
+    <field name="traffic_sign:forward" editable="1"/>
+    <field name="traffic_sign:position" editable="1"/>
+    <field name="traffic_signals" editable="1"/>
+    <field name="traffic_signals:direction" editable="1"/>
+    <field name="traffic_signals:light" editable="1"/>
+    <field name="traffic_signals:sound" editable="1"/>
+    <field name="train" editable="1"/>
+    <field name="tram" editable="1"/>
+    <field name="trolleybus" editable="1"/>
+    <field name="truck" editable="1"/>
+    <field name="turn:lanes" editable="1"/>
+    <field name="type" editable="1"/>
+    <field name="type:RATP" editable="1"/>
+    <field name="uic_name" editable="1"/>
+    <field name="uic_ref" editable="1"/>
+    <field name="unisex" editable="1"/>
+    <field name="url" editable="1"/>
+    <field name="usage" editable="1"/>
+    <field name="vehicle" editable="1"/>
+    <field name="vehicle:forward:conditional" editable="1"/>
+    <field name="vehicles" editable="1"/>
+    <field name="vending" editable="1"/>
+    <field name="vending_machine" editable="1"/>
+    <field name="visibility" editable="1"/>
+    <field name="voltage" editable="1"/>
+    <field name="waste" editable="1"/>
+    <field name="waterway" editable="1"/>
+    <field name="website" editable="1"/>
+    <field name="wheelchair" editable="1"/>
+    <field name="wheelchair:description" editable="1"/>
+    <field name="wheelchair:description:en" editable="1"/>
+    <field name="wheelchair:description:it" editable="1"/>
+    <field name="width" editable="1"/>
+    <field name="width:bicycle" editable="1"/>
+    <field name="wifi" editable="1"/>
+    <field name="wikidata" editable="1"/>
+    <field name="wikipedia" editable="1"/>
   </editable>
   <labelOnTop>
-    <field labelOnTop="0" name="IT:iva"/>
-    <field labelOnTop="0" name="SNCF:stop_name"/>
-    <field labelOnTop="0" name="STIF:zone"/>
-    <field labelOnTop="0" name="TMC:cid_58:tabcd_1:Class"/>
-    <field labelOnTop="0" name="TMC:cid_58:tabcd_1:Direction"/>
-    <field labelOnTop="0" name="TMC:cid_58:tabcd_1:Direction_positive_TMC:cid_58:tabcd_1:LCLversion"/>
-    <field labelOnTop="0" name="TMC:cid_58:tabcd_1:LCLversion"/>
-    <field labelOnTop="0" name="TMC:cid_58:tabcd_1:LocationCode"/>
-    <field labelOnTop="0" name="TMC:cid_58:tabcd_1:NextLocationCode"/>
-    <field labelOnTop="0" name="TMC:cid_58:tabcd_1:PrevLocationCode"/>
-    <field labelOnTop="0" name="_direction"/>
-    <field labelOnTop="0" name="abandoned:highway"/>
-    <field labelOnTop="0" name="abbreviation"/>
-    <field labelOnTop="0" name="access"/>
-    <field labelOnTop="0" name="access:disabled"/>
-    <field labelOnTop="0" name="access:fuel:lpg"/>
-    <field labelOnTop="0" name="additional_directions"/>
-    <field labelOnTop="0" name="addr.source:housenumber"/>
-    <field labelOnTop="0" name="addr.source:street"/>
-    <field labelOnTop="0" name="addr:city"/>
-    <field labelOnTop="0" name="addr:country"/>
-    <field labelOnTop="0" name="addr:housename"/>
-    <field labelOnTop="0" name="addr:housenumber"/>
-    <field labelOnTop="0" name="addr:old_housenumber"/>
-    <field labelOnTop="0" name="addr:postcode"/>
-    <field labelOnTop="0" name="addr:province"/>
-    <field labelOnTop="0" name="addr:state"/>
-    <field labelOnTop="0" name="addr:street"/>
-    <field labelOnTop="0" name="addr:suburb"/>
-    <field labelOnTop="0" name="addr:unit"/>
-    <field labelOnTop="0" name="address"/>
-    <field labelOnTop="0" name="advertising"/>
-    <field labelOnTop="0" name="advertising:text"/>
-    <field labelOnTop="0" name="aeroway"/>
-    <field labelOnTop="0" name="air_conditioning"/>
-    <field labelOnTop="0" name="alt_name"/>
-    <field labelOnTop="0" name="amenity"/>
-    <field labelOnTop="0" name="amperage"/>
-    <field labelOnTop="0" name="animated"/>
-    <field labelOnTop="0" name="annotaion"/>
-    <field labelOnTop="0" name="annotation"/>
-    <field labelOnTop="0" name="architect"/>
-    <field labelOnTop="0" name="artist_name"/>
-    <field labelOnTop="0" name="artwork_type"/>
-    <field labelOnTop="0" name="atm"/>
-    <field labelOnTop="0" name="attendent_service"/>
-    <field labelOnTop="0" name="authentication:nfc"/>
-    <field labelOnTop="0" name="authentication:none"/>
-    <field labelOnTop="0" name="authentication:phone_call"/>
-    <field labelOnTop="0" name="authentication:short_message"/>
-    <field labelOnTop="0" name="authorization"/>
-    <field labelOnTop="0" name="automated"/>
-    <field labelOnTop="0" name="baby"/>
-    <field labelOnTop="0" name="backrest"/>
-    <field labelOnTop="0" name="barrier"/>
-    <field labelOnTop="0" name="barrier:type"/>
-    <field labelOnTop="0" name="barrier_type"/>
-    <field labelOnTop="0" name="bdouble"/>
-    <field labelOnTop="0" name="bench"/>
-    <field labelOnTop="0" name="bic"/>
-    <field labelOnTop="0" name="bicycle"/>
-    <field labelOnTop="0" name="bicycle:conditional"/>
-    <field labelOnTop="0" name="bicycle:trailer"/>
-    <field labelOnTop="0" name="bicycle_parking"/>
-    <field labelOnTop="0" name="blind:description"/>
-    <field labelOnTop="0" name="blind:description:it"/>
-    <field labelOnTop="0" name="board_type"/>
-    <field labelOnTop="0" name="bollard"/>
-    <field labelOnTop="0" name="books"/>
-    <field labelOnTop="0" name="brand"/>
-    <field labelOnTop="0" name="brand:wikidata"/>
-    <field labelOnTop="0" name="brand:wikipedia"/>
-    <field labelOnTop="0" name="breakfast"/>
-    <field labelOnTop="0" name="brewery"/>
-    <field labelOnTop="0" name="bssid"/>
-    <field labelOnTop="0" name="building"/>
-    <field labelOnTop="0" name="building:levels"/>
-    <field labelOnTop="0" name="bus"/>
-    <field labelOnTop="0" name="bus_routes"/>
-    <field labelOnTop="0" name="butcher"/>
-    <field labelOnTop="0" name="button_operated"/>
-    <field labelOnTop="0" name="capacity"/>
-    <field labelOnTop="0" name="capacity:bus"/>
-    <field labelOnTop="0" name="capacity:car"/>
-    <field labelOnTop="0" name="capacity:disabled"/>
-    <field labelOnTop="0" name="capital"/>
-    <field labelOnTop="0" name="car"/>
-    <field labelOnTop="0" name="carpet:type"/>
-    <field labelOnTop="0" name="changing_table"/>
-    <field labelOnTop="0" name="charge"/>
-    <field labelOnTop="0" name="circumference"/>
-    <field labelOnTop="0" name="clothes"/>
-    <field labelOnTop="0" name="club"/>
-    <field labelOnTop="0" name="coach"/>
-    <field labelOnTop="0" name="collapsed"/>
-    <field labelOnTop="0" name="collection_times"/>
-    <field labelOnTop="0" name="colour"/>
-    <field labelOnTop="0" name="comment"/>
-    <field labelOnTop="0" name="comment:it"/>
-    <field labelOnTop="0" name="communication:mobile_phone"/>
-    <field labelOnTop="0" name="contact:email"/>
-    <field labelOnTop="0" name="contact:facebook"/>
-    <field labelOnTop="0" name="contact:fax"/>
-    <field labelOnTop="0" name="contact:mobile"/>
-    <field labelOnTop="0" name="contact:phone"/>
-    <field labelOnTop="0" name="contact:website"/>
-    <field labelOnTop="0" name="covered"/>
-    <field labelOnTop="0" name="craft"/>
-    <field labelOnTop="0" name="crossing"/>
-    <field labelOnTop="0" name="crossing:barrier"/>
-    <field labelOnTop="0" name="crossing:bell"/>
-    <field labelOnTop="0" name="crossing:light"/>
-    <field labelOnTop="0" name="crossing:supervision"/>
-    <field labelOnTop="0" name="crossing_1"/>
-    <field labelOnTop="0" name="crossing_ref"/>
-    <field labelOnTop="0" name="cuisine"/>
-    <field labelOnTop="0" name="cuisine:italian"/>
-    <field labelOnTop="0" name="cuisine:pizza"/>
-    <field labelOnTop="0" name="currency:EUR"/>
-    <field labelOnTop="0" name="curve_geometry"/>
-    <field labelOnTop="0" name="cycleway"/>
-    <field labelOnTop="0" name="cycleway:right"/>
-    <field labelOnTop="0" name="dance:teaching"/>
-    <field labelOnTop="0" name="danger:bicycle"/>
-    <field labelOnTop="0" name="danger:description"/>
-    <field labelOnTop="0" name="dataset"/>
-    <field labelOnTop="0" name="date"/>
-    <field labelOnTop="0" name="delivery"/>
-    <field labelOnTop="0" name="denomination"/>
-    <field labelOnTop="0" name="denotation"/>
-    <field labelOnTop="0" name="description"/>
-    <field labelOnTop="0" name="description:de"/>
-    <field labelOnTop="0" name="description:en"/>
-    <field labelOnTop="0" name="description:it"/>
-    <field labelOnTop="0" name="design"/>
-    <field labelOnTop="0" name="designation"/>
-    <field labelOnTop="0" name="destination"/>
-    <field labelOnTop="0" name="destination:ref"/>
-    <field labelOnTop="0" name="diameter_crown"/>
-    <field labelOnTop="0" name="diet:vegan"/>
-    <field labelOnTop="0" name="diet:vegetarian"/>
-    <field labelOnTop="0" name="direction"/>
-    <field labelOnTop="0" name="disabled"/>
-    <field labelOnTop="0" name="dismantled:amenity"/>
-    <field labelOnTop="0" name="dispensing"/>
-    <field labelOnTop="0" name="display"/>
-    <field labelOnTop="0" name="display:digital"/>
-    <field labelOnTop="0" name="distance"/>
-    <field labelOnTop="0" name="distance_marker"/>
-    <field labelOnTop="0" name="disused:amenity"/>
-    <field labelOnTop="0" name="disused:cuisine"/>
-    <field labelOnTop="0" name="disused:highway"/>
-    <field labelOnTop="0" name="disused:name"/>
-    <field labelOnTop="0" name="disused:railway"/>
-    <field labelOnTop="0" name="disused:shop"/>
-    <field labelOnTop="0" name="dog"/>
-    <field labelOnTop="0" name="drink:raw_milk"/>
-    <field labelOnTop="0" name="drink:water"/>
-    <field labelOnTop="0" name="drive_through"/>
-    <field labelOnTop="0" name="ele"/>
-    <field labelOnTop="0" name="electrified"/>
-    <field labelOnTop="0" name="email"/>
-    <field labelOnTop="0" name="emergency"/>
-    <field labelOnTop="0" name="enforcement"/>
-    <field labelOnTop="0" name="entrance"/>
-    <field labelOnTop="0" name="est_height"/>
-    <field labelOnTop="0" name="est_size"/>
-    <field labelOnTop="0" name="exit_to"/>
-    <field labelOnTop="0" name="facebook"/>
-    <field labelOnTop="0" name="fax"/>
-    <field labelOnTop="0" name="fee"/>
-    <field labelOnTop="0" name="fid"/>
-    <field labelOnTop="0" name="fire_hydrant:count"/>
-    <field labelOnTop="0" name="fire_hydrant:type"/>
-    <field labelOnTop="0" name="flashing_lights"/>
-    <field labelOnTop="0" name="foot"/>
-    <field labelOnTop="0" name="foot:conditional"/>
-    <field labelOnTop="0" name="ford"/>
-    <field labelOnTop="0" name="frequency"/>
-    <field labelOnTop="0" name="fuel"/>
-    <field labelOnTop="0" name="fuel:cng"/>
-    <field labelOnTop="0" name="fuel:lpg"/>
-    <field labelOnTop="0" name="full_id"/>
-    <field labelOnTop="0" name="furniture"/>
-    <field labelOnTop="0" name="gambling"/>
-    <field labelOnTop="0" name="gate:type"/>
-    <field labelOnTop="0" name="gate_type"/>
-    <field labelOnTop="0" name="gauge"/>
-    <field labelOnTop="0" name="generator:method"/>
-    <field labelOnTop="0" name="generator:output:electricity"/>
-    <field labelOnTop="0" name="generator:source"/>
-    <field labelOnTop="0" name="genus"/>
-    <field labelOnTop="0" name="genus:it"/>
-    <field labelOnTop="0" name="gfoss_id"/>
-    <field labelOnTop="0" name="government"/>
-    <field labelOnTop="0" name="gtfs:id"/>
-    <field labelOnTop="0" name="guest_house"/>
-    <field labelOnTop="0" name="hazard"/>
-    <field labelOnTop="0" name="hazard:wheelchair"/>
-    <field labelOnTop="0" name="hazmat:water"/>
-    <field labelOnTop="0" name="healthcare"/>
-    <field labelOnTop="0" name="healthcare:speciality"/>
-    <field labelOnTop="0" name="height"/>
-    <field labelOnTop="0" name="hgv"/>
-    <field labelOnTop="0" name="highway"/>
-    <field labelOnTop="0" name="hiking"/>
-    <field labelOnTop="0" name="historic"/>
-    <field labelOnTop="0" name="historic:name"/>
-    <field labelOnTop="0" name="historic:railway"/>
-    <field labelOnTop="0" name="horse"/>
-    <field labelOnTop="0" name="hour_off"/>
-    <field labelOnTop="0" name="hour_on"/>
-    <field labelOnTop="0" name="image"/>
-    <field labelOnTop="0" name="importance"/>
-    <field labelOnTop="0" name="incline"/>
-    <field labelOnTop="0" name="incline:across"/>
-    <field labelOnTop="0" name="indoor"/>
-    <field labelOnTop="0" name="information"/>
-    <field labelOnTop="0" name="inscription"/>
-    <field labelOnTop="0" name="internet_access"/>
-    <field labelOnTop="0" name="internet_access:fee"/>
-    <field labelOnTop="0" name="internet_access:operator"/>
-    <field labelOnTop="0" name="is_in"/>
-    <field labelOnTop="0" name="is_in:municipality"/>
-    <field labelOnTop="0" name="isced:level"/>
-    <field labelOnTop="0" name="junction"/>
-    <field labelOnTop="0" name="kerb"/>
-    <field labelOnTop="0" name="kerb:height"/>
-    <field labelOnTop="0" name="kerb:left"/>
-    <field labelOnTop="0" name="kerb:right"/>
-    <field labelOnTop="0" name="lamp_mount"/>
-    <field labelOnTop="0" name="lamp_type"/>
-    <field labelOnTop="0" name="lanes"/>
-    <field labelOnTop="0" name="layer"/>
-    <field labelOnTop="0" name="leaf_cycle"/>
-    <field labelOnTop="0" name="leaf_type"/>
-    <field labelOnTop="0" name="leisure"/>
-    <field labelOnTop="0" name="length"/>
-    <field labelOnTop="0" name="level"/>
-    <field labelOnTop="0" name="level:ref"/>
-    <field labelOnTop="0" name="level_crossing"/>
-    <field labelOnTop="0" name="levels"/>
-    <field labelOnTop="0" name="lit"/>
-    <field labelOnTop="0" name="location"/>
-    <field labelOnTop="0" name="luminous"/>
-    <field labelOnTop="0" name="man_made"/>
-    <field labelOnTop="0" name="manhole"/>
-    <field labelOnTop="0" name="manhole:height"/>
-    <field labelOnTop="0" name="manor:type"/>
-    <field labelOnTop="0" name="map_size"/>
-    <field labelOnTop="0" name="map_type"/>
-    <field labelOnTop="0" name="mapillary"/>
-    <field labelOnTop="0" name="marker"/>
-    <field labelOnTop="0" name="material"/>
-    <field labelOnTop="0" name="maxheight"/>
-    <field labelOnTop="0" name="maxspeed"/>
-    <field labelOnTop="0" name="maxspeed:hgv"/>
-    <field labelOnTop="0" name="maxweight"/>
-    <field labelOnTop="0" name="maxwidth"/>
-    <field labelOnTop="0" name="maxwidth:bicycle"/>
-    <field labelOnTop="0" name="maxwidth:physical"/>
-    <field labelOnTop="0" name="memorial"/>
-    <field labelOnTop="0" name="microbrewery"/>
-    <field labelOnTop="0" name="mindistance:hgv"/>
-    <field labelOnTop="0" name="monitoring:sky_brightness"/>
-    <field labelOnTop="0" name="monitoring:water_quality"/>
-    <field labelOnTop="0" name="monument"/>
-    <field labelOnTop="0" name="moped"/>
-    <field labelOnTop="0" name="motor_vehicle"/>
-    <field labelOnTop="0" name="motorcar"/>
-    <field labelOnTop="0" name="motorcycle"/>
-    <field labelOnTop="0" name="motorway"/>
-    <field labelOnTop="0" name="motorway_junction"/>
-    <field labelOnTop="0" name="mountain_pass"/>
-    <field labelOnTop="0" name="mtb"/>
-    <field labelOnTop="0" name="name"/>
-    <field labelOnTop="0" name="name:ar"/>
-    <field labelOnTop="0" name="name:be"/>
-    <field labelOnTop="0" name="name:botanical"/>
-    <field labelOnTop="0" name="name:ca"/>
-    <field labelOnTop="0" name="name:de"/>
-    <field labelOnTop="0" name="name:el"/>
-    <field labelOnTop="0" name="name:en"/>
-    <field labelOnTop="0" name="name:es"/>
-    <field labelOnTop="0" name="name:fi"/>
-    <field labelOnTop="0" name="name:fr"/>
-    <field labelOnTop="0" name="name:fur"/>
-    <field labelOnTop="0" name="name:hu"/>
-    <field labelOnTop="0" name="name:it"/>
-    <field labelOnTop="0" name="name:ja"/>
-    <field labelOnTop="0" name="name:la"/>
-    <field labelOnTop="0" name="name:nl"/>
-    <field labelOnTop="0" name="name:pl"/>
-    <field labelOnTop="0" name="name:pt"/>
-    <field labelOnTop="0" name="name:ro"/>
-    <field labelOnTop="0" name="name:ru"/>
-    <field labelOnTop="0" name="name:sk"/>
-    <field labelOnTop="0" name="name:sl"/>
-    <field labelOnTop="0" name="name:sv"/>
-    <field labelOnTop="0" name="name:uk"/>
-    <field labelOnTop="0" name="name:vec"/>
-    <field labelOnTop="0" name="name:zh"/>
-    <field labelOnTop="0" name="natural"/>
-    <field labelOnTop="0" name="network"/>
-    <field labelOnTop="0" name="noexit"/>
-    <field labelOnTop="0" name="noref"/>
-    <field labelOnTop="0" name="note:access"/>
-    <field labelOnTop="0" name="obstacle"/>
-    <field labelOnTop="0" name="obstacle:blind"/>
-    <field labelOnTop="0" name="obstacle:description"/>
-    <field labelOnTop="0" name="obstacle:foot"/>
-    <field labelOnTop="0" name="obstacle:wheelchair"/>
-    <field labelOnTop="0" name="odbl"/>
-    <field labelOnTop="0" name="office"/>
-    <field labelOnTop="0" name="official_name"/>
-    <field labelOnTop="0" name="old_name"/>
-    <field labelOnTop="0" name="old_name:de"/>
-    <field labelOnTop="0" name="oneway:bicycle"/>
-    <field labelOnTop="0" name="opening_hours"/>
-    <field labelOnTop="0" name="operator"/>
-    <field labelOnTop="0" name="operator:ref"/>
-    <field labelOnTop="0" name="operator:type"/>
-    <field labelOnTop="0" name="operator_1"/>
-    <field labelOnTop="0" name="organic"/>
-    <field labelOnTop="0" name="osm_id"/>
-    <field labelOnTop="0" name="osm_type"/>
-    <field labelOnTop="0" name="other_tags"/>
-    <field labelOnTop="0" name="outdoor_seating"/>
-    <field labelOnTop="0" name="oven"/>
-    <field labelOnTop="0" name="overtaking"/>
-    <field labelOnTop="0" name="overtaking:bus"/>
-    <field labelOnTop="0" name="overtaking:hgv"/>
-    <field labelOnTop="0" name="overtaking:trailer"/>
-    <field labelOnTop="0" name="park_ride"/>
-    <field labelOnTop="0" name="parking"/>
-    <field labelOnTop="0" name="parking:fee"/>
-    <field labelOnTop="0" name="passenger_lines"/>
-    <field labelOnTop="0" name="pastry"/>
-    <field labelOnTop="0" name="payment:account_cards"/>
-    <field labelOnTop="0" name="payment:bancomat"/>
-    <field labelOnTop="0" name="payment:bitcoin"/>
-    <field labelOnTop="0" name="payment:cash"/>
-    <field labelOnTop="0" name="payment:coins"/>
-    <field labelOnTop="0" name="payment:credit_cards"/>
-    <field labelOnTop="0" name="payment:debit_cards"/>
-    <field labelOnTop="0" name="payment:electronic_purses"/>
-    <field labelOnTop="0" name="payment:girocard"/>
-    <field labelOnTop="0" name="payment:mastercard"/>
-    <field labelOnTop="0" name="payment:notes"/>
-    <field labelOnTop="0" name="payment:telephone_cards"/>
-    <field labelOnTop="0" name="payment:visa"/>
-    <field labelOnTop="0" name="phone"/>
-    <field labelOnTop="0" name="phone_1"/>
-    <field labelOnTop="0" name="place"/>
-    <field labelOnTop="0" name="platforms"/>
-    <field labelOnTop="0" name="playground"/>
-    <field labelOnTop="0" name="pole"/>
-    <field labelOnTop="0" name="population"/>
-    <field labelOnTop="0" name="post_box:type"/>
-    <field labelOnTop="0" name="postal_code"/>
-    <field labelOnTop="0" name="power"/>
-    <field labelOnTop="0" name="power_supply"/>
-    <field labelOnTop="0" name="produce"/>
-    <field labelOnTop="0" name="proposed"/>
-    <field labelOnTop="0" name="psv"/>
-    <field labelOnTop="0" name="pub"/>
-    <field labelOnTop="0" name="public_transport"/>
-    <field labelOnTop="0" name="public_transport_tickets"/>
-    <field labelOnTop="0" name="rail"/>
-    <field labelOnTop="0" name="railway"/>
-    <field labelOnTop="0" name="railway:name:SBB"/>
-    <field labelOnTop="0" name="railway:name:SNCF"/>
-    <field labelOnTop="0" name="railway:position"/>
-    <field labelOnTop="0" name="railway:position:exact"/>
-    <field labelOnTop="0" name="railway:ref"/>
-    <field labelOnTop="0" name="railway:ref:DB"/>
-    <field labelOnTop="0" name="railway:ref:SBB"/>
-    <field labelOnTop="0" name="railway:ref:SNCF"/>
-    <field labelOnTop="0" name="ramp"/>
-    <field labelOnTop="0" name="recording:automated"/>
-    <field labelOnTop="0" name="recording:remote"/>
-    <field labelOnTop="0" name="recycling"/>
-    <field labelOnTop="0" name="recycling:aluminium"/>
-    <field labelOnTop="0" name="recycling:batteries"/>
-    <field labelOnTop="0" name="recycling:beverage_cartons"/>
-    <field labelOnTop="0" name="recycling:books"/>
-    <field labelOnTop="0" name="recycling:cans"/>
-    <field labelOnTop="0" name="recycling:cardboard"/>
-    <field labelOnTop="0" name="recycling:cartons"/>
-    <field labelOnTop="0" name="recycling:clothes"/>
-    <field labelOnTop="0" name="recycling:cooking_oil"/>
-    <field labelOnTop="0" name="recycling:drugs"/>
-    <field labelOnTop="0" name="recycling:electrical_appliances"/>
-    <field labelOnTop="0" name="recycling:garden_waste"/>
-    <field labelOnTop="0" name="recycling:glass"/>
-    <field labelOnTop="0" name="recycling:glass_bottles"/>
-    <field labelOnTop="0" name="recycling:green_waste"/>
-    <field labelOnTop="0" name="recycling:magazines"/>
-    <field labelOnTop="0" name="recycling:metal"/>
-    <field labelOnTop="0" name="recycling:newspaper"/>
-    <field labelOnTop="0" name="recycling:paper"/>
-    <field labelOnTop="0" name="recycling:paper_packaging"/>
-    <field labelOnTop="0" name="recycling:plastic"/>
-    <field labelOnTop="0" name="recycling:plastic_bottles"/>
-    <field labelOnTop="0" name="recycling:plastic_packaging"/>
-    <field labelOnTop="0" name="recycling:scrap_metal"/>
-    <field labelOnTop="0" name="recycling:small_appliances"/>
-    <field labelOnTop="0" name="recycling:waste"/>
-    <field labelOnTop="0" name="recycling:wood"/>
-    <field labelOnTop="0" name="recycling_type"/>
-    <field labelOnTop="0" name="ref"/>
-    <field labelOnTop="0" name="ref:FR:RATP"/>
-    <field labelOnTop="0" name="ref:FR:STIF"/>
-    <field labelOnTop="0" name="ref:FR:uic8"/>
-    <field labelOnTop="0" name="ref:IT:IRVV"/>
-    <field labelOnTop="0" name="ref:SNCF"/>
-    <field labelOnTop="0" name="ref:isil"/>
-    <field labelOnTop="0" name="ref:it:vat"/>
-    <field labelOnTop="0" name="ref:mise"/>
-    <field labelOnTop="0" name="ref:terna"/>
-    <field labelOnTop="0" name="ref:vatin"/>
-    <field labelOnTop="0" name="religion"/>
-    <field labelOnTop="0" name="rental"/>
-    <field labelOnTop="0" name="repair"/>
-    <field labelOnTop="0" name="restaurant:type:it"/>
-    <field labelOnTop="0" name="rooms"/>
-    <field labelOnTop="0" name="route"/>
-    <field labelOnTop="0" name="route_ref"/>
-    <field labelOnTop="0" name="route_ref:FR:RER_D"/>
-    <field labelOnTop="0" name="safety_inspection"/>
-    <field labelOnTop="0" name="sale"/>
-    <field labelOnTop="0" name="sanitary_dump_station"/>
-    <field labelOnTop="0" name="scooter"/>
-    <field labelOnTop="0" name="seasonal"/>
-    <field labelOnTop="0" name="seats"/>
-    <field labelOnTop="0" name="second_hand"/>
-    <field labelOnTop="0" name="segregated"/>
-    <field labelOnTop="0" name="self_service"/>
-    <field labelOnTop="0" name="sells"/>
-    <field labelOnTop="0" name="sells:tobacco"/>
-    <field labelOnTop="0" name="service"/>
-    <field labelOnTop="0" name="service:bicycle:cleaning"/>
-    <field labelOnTop="0" name="service:bicycle:diy"/>
-    <field labelOnTop="0" name="service:bicycle:pump"/>
-    <field labelOnTop="0" name="service:bicycle:rental"/>
-    <field labelOnTop="0" name="service:bicycle:repair"/>
-    <field labelOnTop="0" name="service:bicycle:retail"/>
-    <field labelOnTop="0" name="service:bicycle:second_hand"/>
-    <field labelOnTop="0" name="service_times"/>
-    <field labelOnTop="0" name="shelter"/>
-    <field labelOnTop="0" name="shop"/>
-    <field labelOnTop="0" name="shop:bicycle:market"/>
-    <field labelOnTop="0" name="shop:bicycle:pump"/>
-    <field labelOnTop="0" name="shop:bicycle:rental"/>
-    <field labelOnTop="0" name="shop:bicycle:repair"/>
-    <field labelOnTop="0" name="shop:bicycle:retail"/>
-    <field labelOnTop="0" name="shop:bicycle:second_hand"/>
-    <field labelOnTop="0" name="shop_1"/>
-    <field labelOnTop="0" name="sides"/>
-    <field labelOnTop="0" name="sloped_curb"/>
-    <field labelOnTop="0" name="smoking"/>
-    <field labelOnTop="0" name="smoothness"/>
-    <field labelOnTop="0" name="social_facility"/>
-    <field labelOnTop="0" name="socket:chademo"/>
-    <field labelOnTop="0" name="socket:schuko"/>
-    <field labelOnTop="0" name="socket:type2"/>
-    <field labelOnTop="0" name="source:access"/>
-    <field labelOnTop="0" name="source:date"/>
-    <field labelOnTop="0" name="source:def"/>
-    <field labelOnTop="0" name="source:ele"/>
-    <field labelOnTop="0" name="source:maxheight"/>
-    <field labelOnTop="0" name="source:maxspeed"/>
-    <field labelOnTop="0" name="source:position"/>
-    <field labelOnTop="0" name="species"/>
-    <field labelOnTop="0" name="species:en"/>
-    <field labelOnTop="0" name="species:it"/>
-    <field labelOnTop="0" name="sport"/>
-    <field labelOnTop="0" name="stamps"/>
-    <field labelOnTop="0" name="stars"/>
-    <field labelOnTop="0" name="start_date"/>
-    <field labelOnTop="0" name="stop"/>
-    <field labelOnTop="0" name="street_cabinet"/>
-    <field labelOnTop="0" name="structure"/>
-    <field labelOnTop="0" name="substation"/>
-    <field labelOnTop="0" name="supervised"/>
-    <field labelOnTop="0" name="support"/>
-    <field labelOnTop="0" name="surface"/>
-    <field labelOnTop="0" name="surveillance"/>
-    <field labelOnTop="0" name="survey:date"/>
-    <field labelOnTop="0" name="swing_gate:type"/>
-    <field labelOnTop="0" name="tactile_paving"/>
-    <field labelOnTop="0" name="takeaway"/>
-    <field labelOnTop="0" name="tasting"/>
-    <field labelOnTop="0" name="tmc"/>
-    <field labelOnTop="0" name="tobacco"/>
-    <field labelOnTop="0" name="toilets"/>
-    <field labelOnTop="0" name="toilets:access"/>
-    <field labelOnTop="0" name="toilets:position"/>
-    <field labelOnTop="0" name="toilets:wheelchair"/>
-    <field labelOnTop="0" name="toll"/>
-    <field labelOnTop="0" name="tourism"/>
-    <field labelOnTop="0" name="tourist_bus"/>
-    <field labelOnTop="0" name="towards"/>
-    <field labelOnTop="0" name="tower"/>
-    <field labelOnTop="0" name="tower:type"/>
-    <field labelOnTop="0" name="traffic_calming"/>
-    <field labelOnTop="0" name="traffic_sign"/>
-    <field labelOnTop="0" name="traffic_sign:forward"/>
-    <field labelOnTop="0" name="traffic_sign:position"/>
-    <field labelOnTop="0" name="traffic_signals"/>
-    <field labelOnTop="0" name="traffic_signals:direction"/>
-    <field labelOnTop="0" name="traffic_signals:light"/>
-    <field labelOnTop="0" name="traffic_signals:sound"/>
-    <field labelOnTop="0" name="train"/>
-    <field labelOnTop="0" name="tram"/>
-    <field labelOnTop="0" name="trolleybus"/>
-    <field labelOnTop="0" name="truck"/>
-    <field labelOnTop="0" name="turn:lanes"/>
-    <field labelOnTop="0" name="type"/>
-    <field labelOnTop="0" name="type:RATP"/>
-    <field labelOnTop="0" name="uic_name"/>
-    <field labelOnTop="0" name="uic_ref"/>
-    <field labelOnTop="0" name="unisex"/>
-    <field labelOnTop="0" name="url"/>
-    <field labelOnTop="0" name="usage"/>
-    <field labelOnTop="0" name="vehicle"/>
-    <field labelOnTop="0" name="vehicle:forward:conditional"/>
-    <field labelOnTop="0" name="vehicles"/>
-    <field labelOnTop="0" name="vending"/>
-    <field labelOnTop="0" name="vending_machine"/>
-    <field labelOnTop="0" name="visibility"/>
-    <field labelOnTop="0" name="voltage"/>
-    <field labelOnTop="0" name="waste"/>
-    <field labelOnTop="0" name="waterway"/>
-    <field labelOnTop="0" name="website"/>
-    <field labelOnTop="0" name="wheelchair"/>
-    <field labelOnTop="0" name="wheelchair:description"/>
-    <field labelOnTop="0" name="wheelchair:description:en"/>
-    <field labelOnTop="0" name="wheelchair:description:it"/>
-    <field labelOnTop="0" name="width"/>
-    <field labelOnTop="0" name="width:bicycle"/>
-    <field labelOnTop="0" name="wifi"/>
-    <field labelOnTop="0" name="wikidata"/>
-    <field labelOnTop="0" name="wikipedia"/>
+    <field name="IT:iva" labelOnTop="0"/>
+    <field name="SNCF:stop_name" labelOnTop="0"/>
+    <field name="STIF:zone" labelOnTop="0"/>
+    <field name="TMC:cid_58:tabcd_1:Class" labelOnTop="0"/>
+    <field name="TMC:cid_58:tabcd_1:Direction" labelOnTop="0"/>
+    <field name="TMC:cid_58:tabcd_1:Direction_positive_TMC:cid_58:tabcd_1:LCLversion" labelOnTop="0"/>
+    <field name="TMC:cid_58:tabcd_1:LCLversion" labelOnTop="0"/>
+    <field name="TMC:cid_58:tabcd_1:LocationCode" labelOnTop="0"/>
+    <field name="TMC:cid_58:tabcd_1:NextLocationCode" labelOnTop="0"/>
+    <field name="TMC:cid_58:tabcd_1:PrevLocationCode" labelOnTop="0"/>
+    <field name="_direction" labelOnTop="0"/>
+    <field name="abandoned:highway" labelOnTop="0"/>
+    <field name="abbreviation" labelOnTop="0"/>
+    <field name="access" labelOnTop="0"/>
+    <field name="access:disabled" labelOnTop="0"/>
+    <field name="access:fuel:lpg" labelOnTop="0"/>
+    <field name="additional_directions" labelOnTop="0"/>
+    <field name="addr.source:housenumber" labelOnTop="0"/>
+    <field name="addr.source:street" labelOnTop="0"/>
+    <field name="addr:city" labelOnTop="0"/>
+    <field name="addr:country" labelOnTop="0"/>
+    <field name="addr:housename" labelOnTop="0"/>
+    <field name="addr:housenumber" labelOnTop="0"/>
+    <field name="addr:old_housenumber" labelOnTop="0"/>
+    <field name="addr:postcode" labelOnTop="0"/>
+    <field name="addr:province" labelOnTop="0"/>
+    <field name="addr:state" labelOnTop="0"/>
+    <field name="addr:street" labelOnTop="0"/>
+    <field name="addr:suburb" labelOnTop="0"/>
+    <field name="addr:unit" labelOnTop="0"/>
+    <field name="address" labelOnTop="0"/>
+    <field name="advertising" labelOnTop="0"/>
+    <field name="advertising:text" labelOnTop="0"/>
+    <field name="aeroway" labelOnTop="0"/>
+    <field name="air_conditioning" labelOnTop="0"/>
+    <field name="alt_name" labelOnTop="0"/>
+    <field name="amenity" labelOnTop="0"/>
+    <field name="amperage" labelOnTop="0"/>
+    <field name="animated" labelOnTop="0"/>
+    <field name="annotaion" labelOnTop="0"/>
+    <field name="annotation" labelOnTop="0"/>
+    <field name="architect" labelOnTop="0"/>
+    <field name="artist_name" labelOnTop="0"/>
+    <field name="artwork_type" labelOnTop="0"/>
+    <field name="atm" labelOnTop="0"/>
+    <field name="attendent_service" labelOnTop="0"/>
+    <field name="authentication:nfc" labelOnTop="0"/>
+    <field name="authentication:none" labelOnTop="0"/>
+    <field name="authentication:phone_call" labelOnTop="0"/>
+    <field name="authentication:short_message" labelOnTop="0"/>
+    <field name="authorization" labelOnTop="0"/>
+    <field name="automated" labelOnTop="0"/>
+    <field name="baby" labelOnTop="0"/>
+    <field name="backrest" labelOnTop="0"/>
+    <field name="barrier" labelOnTop="0"/>
+    <field name="barrier:type" labelOnTop="0"/>
+    <field name="barrier_type" labelOnTop="0"/>
+    <field name="bdouble" labelOnTop="0"/>
+    <field name="bench" labelOnTop="0"/>
+    <field name="bic" labelOnTop="0"/>
+    <field name="bicycle" labelOnTop="0"/>
+    <field name="bicycle:conditional" labelOnTop="0"/>
+    <field name="bicycle:trailer" labelOnTop="0"/>
+    <field name="bicycle_parking" labelOnTop="0"/>
+    <field name="blind:description" labelOnTop="0"/>
+    <field name="blind:description:it" labelOnTop="0"/>
+    <field name="board_type" labelOnTop="0"/>
+    <field name="bollard" labelOnTop="0"/>
+    <field name="books" labelOnTop="0"/>
+    <field name="brand" labelOnTop="0"/>
+    <field name="brand:wikidata" labelOnTop="0"/>
+    <field name="brand:wikipedia" labelOnTop="0"/>
+    <field name="breakfast" labelOnTop="0"/>
+    <field name="brewery" labelOnTop="0"/>
+    <field name="bssid" labelOnTop="0"/>
+    <field name="building" labelOnTop="0"/>
+    <field name="building:levels" labelOnTop="0"/>
+    <field name="bus" labelOnTop="0"/>
+    <field name="bus_routes" labelOnTop="0"/>
+    <field name="butcher" labelOnTop="0"/>
+    <field name="button_operated" labelOnTop="0"/>
+    <field name="capacity" labelOnTop="0"/>
+    <field name="capacity:bus" labelOnTop="0"/>
+    <field name="capacity:car" labelOnTop="0"/>
+    <field name="capacity:disabled" labelOnTop="0"/>
+    <field name="capital" labelOnTop="0"/>
+    <field name="car" labelOnTop="0"/>
+    <field name="carpet:type" labelOnTop="0"/>
+    <field name="changing_table" labelOnTop="0"/>
+    <field name="charge" labelOnTop="0"/>
+    <field name="circumference" labelOnTop="0"/>
+    <field name="clothes" labelOnTop="0"/>
+    <field name="club" labelOnTop="0"/>
+    <field name="coach" labelOnTop="0"/>
+    <field name="collapsed" labelOnTop="0"/>
+    <field name="collection_times" labelOnTop="0"/>
+    <field name="colour" labelOnTop="0"/>
+    <field name="comment" labelOnTop="0"/>
+    <field name="comment:it" labelOnTop="0"/>
+    <field name="communication:mobile_phone" labelOnTop="0"/>
+    <field name="contact:email" labelOnTop="0"/>
+    <field name="contact:facebook" labelOnTop="0"/>
+    <field name="contact:fax" labelOnTop="0"/>
+    <field name="contact:mobile" labelOnTop="0"/>
+    <field name="contact:phone" labelOnTop="0"/>
+    <field name="contact:website" labelOnTop="0"/>
+    <field name="covered" labelOnTop="0"/>
+    <field name="craft" labelOnTop="0"/>
+    <field name="crossing" labelOnTop="0"/>
+    <field name="crossing:barrier" labelOnTop="0"/>
+    <field name="crossing:bell" labelOnTop="0"/>
+    <field name="crossing:light" labelOnTop="0"/>
+    <field name="crossing:supervision" labelOnTop="0"/>
+    <field name="crossing_1" labelOnTop="0"/>
+    <field name="crossing_ref" labelOnTop="0"/>
+    <field name="cuisine" labelOnTop="0"/>
+    <field name="cuisine:italian" labelOnTop="0"/>
+    <field name="cuisine:pizza" labelOnTop="0"/>
+    <field name="currency:EUR" labelOnTop="0"/>
+    <field name="curve_geometry" labelOnTop="0"/>
+    <field name="cycleway" labelOnTop="0"/>
+    <field name="cycleway:right" labelOnTop="0"/>
+    <field name="dance:teaching" labelOnTop="0"/>
+    <field name="danger:bicycle" labelOnTop="0"/>
+    <field name="danger:description" labelOnTop="0"/>
+    <field name="dataset" labelOnTop="0"/>
+    <field name="date" labelOnTop="0"/>
+    <field name="delivery" labelOnTop="0"/>
+    <field name="denomination" labelOnTop="0"/>
+    <field name="denotation" labelOnTop="0"/>
+    <field name="description" labelOnTop="0"/>
+    <field name="description:de" labelOnTop="0"/>
+    <field name="description:en" labelOnTop="0"/>
+    <field name="description:it" labelOnTop="0"/>
+    <field name="design" labelOnTop="0"/>
+    <field name="designation" labelOnTop="0"/>
+    <field name="destination" labelOnTop="0"/>
+    <field name="destination:ref" labelOnTop="0"/>
+    <field name="diameter_crown" labelOnTop="0"/>
+    <field name="diet:vegan" labelOnTop="0"/>
+    <field name="diet:vegetarian" labelOnTop="0"/>
+    <field name="direction" labelOnTop="0"/>
+    <field name="disabled" labelOnTop="0"/>
+    <field name="dismantled:amenity" labelOnTop="0"/>
+    <field name="dispensing" labelOnTop="0"/>
+    <field name="display" labelOnTop="0"/>
+    <field name="display:digital" labelOnTop="0"/>
+    <field name="distance" labelOnTop="0"/>
+    <field name="distance_marker" labelOnTop="0"/>
+    <field name="disused:amenity" labelOnTop="0"/>
+    <field name="disused:cuisine" labelOnTop="0"/>
+    <field name="disused:highway" labelOnTop="0"/>
+    <field name="disused:name" labelOnTop="0"/>
+    <field name="disused:railway" labelOnTop="0"/>
+    <field name="disused:shop" labelOnTop="0"/>
+    <field name="dog" labelOnTop="0"/>
+    <field name="drink:raw_milk" labelOnTop="0"/>
+    <field name="drink:water" labelOnTop="0"/>
+    <field name="drive_through" labelOnTop="0"/>
+    <field name="ele" labelOnTop="0"/>
+    <field name="electrified" labelOnTop="0"/>
+    <field name="email" labelOnTop="0"/>
+    <field name="emergency" labelOnTop="0"/>
+    <field name="enforcement" labelOnTop="0"/>
+    <field name="entrance" labelOnTop="0"/>
+    <field name="est_height" labelOnTop="0"/>
+    <field name="est_size" labelOnTop="0"/>
+    <field name="exit_to" labelOnTop="0"/>
+    <field name="facebook" labelOnTop="0"/>
+    <field name="fax" labelOnTop="0"/>
+    <field name="fee" labelOnTop="0"/>
+    <field name="fid" labelOnTop="0"/>
+    <field name="fire_hydrant:count" labelOnTop="0"/>
+    <field name="fire_hydrant:type" labelOnTop="0"/>
+    <field name="flashing_lights" labelOnTop="0"/>
+    <field name="foot" labelOnTop="0"/>
+    <field name="foot:conditional" labelOnTop="0"/>
+    <field name="ford" labelOnTop="0"/>
+    <field name="frequency" labelOnTop="0"/>
+    <field name="fuel" labelOnTop="0"/>
+    <field name="fuel:cng" labelOnTop="0"/>
+    <field name="fuel:lpg" labelOnTop="0"/>
+    <field name="full_id" labelOnTop="0"/>
+    <field name="furniture" labelOnTop="0"/>
+    <field name="gambling" labelOnTop="0"/>
+    <field name="gate:type" labelOnTop="0"/>
+    <field name="gate_type" labelOnTop="0"/>
+    <field name="gauge" labelOnTop="0"/>
+    <field name="generator:method" labelOnTop="0"/>
+    <field name="generator:output:electricity" labelOnTop="0"/>
+    <field name="generator:source" labelOnTop="0"/>
+    <field name="genus" labelOnTop="0"/>
+    <field name="genus:it" labelOnTop="0"/>
+    <field name="gfoss_id" labelOnTop="0"/>
+    <field name="government" labelOnTop="0"/>
+    <field name="gtfs:id" labelOnTop="0"/>
+    <field name="guest_house" labelOnTop="0"/>
+    <field name="hazard" labelOnTop="0"/>
+    <field name="hazard:wheelchair" labelOnTop="0"/>
+    <field name="hazmat:water" labelOnTop="0"/>
+    <field name="healthcare" labelOnTop="0"/>
+    <field name="healthcare:speciality" labelOnTop="0"/>
+    <field name="height" labelOnTop="0"/>
+    <field name="hgv" labelOnTop="0"/>
+    <field name="highway" labelOnTop="0"/>
+    <field name="hiking" labelOnTop="0"/>
+    <field name="historic" labelOnTop="0"/>
+    <field name="historic:name" labelOnTop="0"/>
+    <field name="historic:railway" labelOnTop="0"/>
+    <field name="horse" labelOnTop="0"/>
+    <field name="hour_off" labelOnTop="0"/>
+    <field name="hour_on" labelOnTop="0"/>
+    <field name="image" labelOnTop="0"/>
+    <field name="importance" labelOnTop="0"/>
+    <field name="incline" labelOnTop="0"/>
+    <field name="incline:across" labelOnTop="0"/>
+    <field name="indoor" labelOnTop="0"/>
+    <field name="information" labelOnTop="0"/>
+    <field name="inscription" labelOnTop="0"/>
+    <field name="internet_access" labelOnTop="0"/>
+    <field name="internet_access:fee" labelOnTop="0"/>
+    <field name="internet_access:operator" labelOnTop="0"/>
+    <field name="is_in" labelOnTop="0"/>
+    <field name="is_in:municipality" labelOnTop="0"/>
+    <field name="isced:level" labelOnTop="0"/>
+    <field name="junction" labelOnTop="0"/>
+    <field name="kerb" labelOnTop="0"/>
+    <field name="kerb:height" labelOnTop="0"/>
+    <field name="kerb:left" labelOnTop="0"/>
+    <field name="kerb:right" labelOnTop="0"/>
+    <field name="lamp_mount" labelOnTop="0"/>
+    <field name="lamp_type" labelOnTop="0"/>
+    <field name="lanes" labelOnTop="0"/>
+    <field name="layer" labelOnTop="0"/>
+    <field name="leaf_cycle" labelOnTop="0"/>
+    <field name="leaf_type" labelOnTop="0"/>
+    <field name="leisure" labelOnTop="0"/>
+    <field name="length" labelOnTop="0"/>
+    <field name="level" labelOnTop="0"/>
+    <field name="level:ref" labelOnTop="0"/>
+    <field name="level_crossing" labelOnTop="0"/>
+    <field name="levels" labelOnTop="0"/>
+    <field name="lit" labelOnTop="0"/>
+    <field name="location" labelOnTop="0"/>
+    <field name="luminous" labelOnTop="0"/>
+    <field name="man_made" labelOnTop="0"/>
+    <field name="manhole" labelOnTop="0"/>
+    <field name="manhole:height" labelOnTop="0"/>
+    <field name="manor:type" labelOnTop="0"/>
+    <field name="map_size" labelOnTop="0"/>
+    <field name="map_type" labelOnTop="0"/>
+    <field name="mapillary" labelOnTop="0"/>
+    <field name="marker" labelOnTop="0"/>
+    <field name="material" labelOnTop="0"/>
+    <field name="maxheight" labelOnTop="0"/>
+    <field name="maxspeed" labelOnTop="0"/>
+    <field name="maxspeed:hgv" labelOnTop="0"/>
+    <field name="maxweight" labelOnTop="0"/>
+    <field name="maxwidth" labelOnTop="0"/>
+    <field name="maxwidth:bicycle" labelOnTop="0"/>
+    <field name="maxwidth:physical" labelOnTop="0"/>
+    <field name="memorial" labelOnTop="0"/>
+    <field name="microbrewery" labelOnTop="0"/>
+    <field name="mindistance:hgv" labelOnTop="0"/>
+    <field name="monitoring:sky_brightness" labelOnTop="0"/>
+    <field name="monitoring:water_quality" labelOnTop="0"/>
+    <field name="monument" labelOnTop="0"/>
+    <field name="moped" labelOnTop="0"/>
+    <field name="motor_vehicle" labelOnTop="0"/>
+    <field name="motorcar" labelOnTop="0"/>
+    <field name="motorcycle" labelOnTop="0"/>
+    <field name="motorway" labelOnTop="0"/>
+    <field name="motorway_junction" labelOnTop="0"/>
+    <field name="mountain_pass" labelOnTop="0"/>
+    <field name="mtb" labelOnTop="0"/>
+    <field name="name" labelOnTop="0"/>
+    <field name="name:ar" labelOnTop="0"/>
+    <field name="name:be" labelOnTop="0"/>
+    <field name="name:botanical" labelOnTop="0"/>
+    <field name="name:ca" labelOnTop="0"/>
+    <field name="name:de" labelOnTop="0"/>
+    <field name="name:el" labelOnTop="0"/>
+    <field name="name:en" labelOnTop="0"/>
+    <field name="name:es" labelOnTop="0"/>
+    <field name="name:fi" labelOnTop="0"/>
+    <field name="name:fr" labelOnTop="0"/>
+    <field name="name:fur" labelOnTop="0"/>
+    <field name="name:hu" labelOnTop="0"/>
+    <field name="name:it" labelOnTop="0"/>
+    <field name="name:ja" labelOnTop="0"/>
+    <field name="name:la" labelOnTop="0"/>
+    <field name="name:nl" labelOnTop="0"/>
+    <field name="name:pl" labelOnTop="0"/>
+    <field name="name:pt" labelOnTop="0"/>
+    <field name="name:ro" labelOnTop="0"/>
+    <field name="name:ru" labelOnTop="0"/>
+    <field name="name:sk" labelOnTop="0"/>
+    <field name="name:sl" labelOnTop="0"/>
+    <field name="name:sv" labelOnTop="0"/>
+    <field name="name:uk" labelOnTop="0"/>
+    <field name="name:vec" labelOnTop="0"/>
+    <field name="name:zh" labelOnTop="0"/>
+    <field name="natural" labelOnTop="0"/>
+    <field name="network" labelOnTop="0"/>
+    <field name="noexit" labelOnTop="0"/>
+    <field name="noref" labelOnTop="0"/>
+    <field name="note:access" labelOnTop="0"/>
+    <field name="obstacle" labelOnTop="0"/>
+    <field name="obstacle:blind" labelOnTop="0"/>
+    <field name="obstacle:description" labelOnTop="0"/>
+    <field name="obstacle:foot" labelOnTop="0"/>
+    <field name="obstacle:wheelchair" labelOnTop="0"/>
+    <field name="odbl" labelOnTop="0"/>
+    <field name="office" labelOnTop="0"/>
+    <field name="official_name" labelOnTop="0"/>
+    <field name="old_name" labelOnTop="0"/>
+    <field name="old_name:de" labelOnTop="0"/>
+    <field name="oneway:bicycle" labelOnTop="0"/>
+    <field name="opening_hours" labelOnTop="0"/>
+    <field name="operator" labelOnTop="0"/>
+    <field name="operator:ref" labelOnTop="0"/>
+    <field name="operator:type" labelOnTop="0"/>
+    <field name="operator_1" labelOnTop="0"/>
+    <field name="organic" labelOnTop="0"/>
+    <field name="osm_id" labelOnTop="0"/>
+    <field name="osm_type" labelOnTop="0"/>
+    <field name="other_tags" labelOnTop="0"/>
+    <field name="outdoor_seating" labelOnTop="0"/>
+    <field name="oven" labelOnTop="0"/>
+    <field name="overtaking" labelOnTop="0"/>
+    <field name="overtaking:bus" labelOnTop="0"/>
+    <field name="overtaking:hgv" labelOnTop="0"/>
+    <field name="overtaking:trailer" labelOnTop="0"/>
+    <field name="park_ride" labelOnTop="0"/>
+    <field name="parking" labelOnTop="0"/>
+    <field name="parking:fee" labelOnTop="0"/>
+    <field name="parking_space" labelOnTop="0"/>
+    <field name="passenger_lines" labelOnTop="0"/>
+    <field name="pastry" labelOnTop="0"/>
+    <field name="payment:account_cards" labelOnTop="0"/>
+    <field name="payment:bancomat" labelOnTop="0"/>
+    <field name="payment:bitcoin" labelOnTop="0"/>
+    <field name="payment:cash" labelOnTop="0"/>
+    <field name="payment:coins" labelOnTop="0"/>
+    <field name="payment:credit_cards" labelOnTop="0"/>
+    <field name="payment:debit_cards" labelOnTop="0"/>
+    <field name="payment:electronic_purses" labelOnTop="0"/>
+    <field name="payment:girocard" labelOnTop="0"/>
+    <field name="payment:mastercard" labelOnTop="0"/>
+    <field name="payment:notes" labelOnTop="0"/>
+    <field name="payment:telephone_cards" labelOnTop="0"/>
+    <field name="payment:visa" labelOnTop="0"/>
+    <field name="phone" labelOnTop="0"/>
+    <field name="phone_1" labelOnTop="0"/>
+    <field name="place" labelOnTop="0"/>
+    <field name="platforms" labelOnTop="0"/>
+    <field name="playground" labelOnTop="0"/>
+    <field name="pole" labelOnTop="0"/>
+    <field name="population" labelOnTop="0"/>
+    <field name="post_box:type" labelOnTop="0"/>
+    <field name="postal_code" labelOnTop="0"/>
+    <field name="power" labelOnTop="0"/>
+    <field name="power_supply" labelOnTop="0"/>
+    <field name="produce" labelOnTop="0"/>
+    <field name="proposed" labelOnTop="0"/>
+    <field name="psv" labelOnTop="0"/>
+    <field name="pub" labelOnTop="0"/>
+    <field name="public_transport" labelOnTop="0"/>
+    <field name="public_transport_tickets" labelOnTop="0"/>
+    <field name="rail" labelOnTop="0"/>
+    <field name="railway" labelOnTop="0"/>
+    <field name="railway:name:SBB" labelOnTop="0"/>
+    <field name="railway:name:SNCF" labelOnTop="0"/>
+    <field name="railway:position" labelOnTop="0"/>
+    <field name="railway:position:exact" labelOnTop="0"/>
+    <field name="railway:ref" labelOnTop="0"/>
+    <field name="railway:ref:DB" labelOnTop="0"/>
+    <field name="railway:ref:SBB" labelOnTop="0"/>
+    <field name="railway:ref:SNCF" labelOnTop="0"/>
+    <field name="ramp" labelOnTop="0"/>
+    <field name="recording:automated" labelOnTop="0"/>
+    <field name="recording:remote" labelOnTop="0"/>
+    <field name="recycling" labelOnTop="0"/>
+    <field name="recycling:aluminium" labelOnTop="0"/>
+    <field name="recycling:batteries" labelOnTop="0"/>
+    <field name="recycling:beverage_cartons" labelOnTop="0"/>
+    <field name="recycling:books" labelOnTop="0"/>
+    <field name="recycling:cans" labelOnTop="0"/>
+    <field name="recycling:cardboard" labelOnTop="0"/>
+    <field name="recycling:cartons" labelOnTop="0"/>
+    <field name="recycling:clothes" labelOnTop="0"/>
+    <field name="recycling:cooking_oil" labelOnTop="0"/>
+    <field name="recycling:drugs" labelOnTop="0"/>
+    <field name="recycling:electrical_appliances" labelOnTop="0"/>
+    <field name="recycling:garden_waste" labelOnTop="0"/>
+    <field name="recycling:glass" labelOnTop="0"/>
+    <field name="recycling:glass_bottles" labelOnTop="0"/>
+    <field name="recycling:green_waste" labelOnTop="0"/>
+    <field name="recycling:magazines" labelOnTop="0"/>
+    <field name="recycling:metal" labelOnTop="0"/>
+    <field name="recycling:newspaper" labelOnTop="0"/>
+    <field name="recycling:paper" labelOnTop="0"/>
+    <field name="recycling:paper_packaging" labelOnTop="0"/>
+    <field name="recycling:plastic" labelOnTop="0"/>
+    <field name="recycling:plastic_bottles" labelOnTop="0"/>
+    <field name="recycling:plastic_packaging" labelOnTop="0"/>
+    <field name="recycling:scrap_metal" labelOnTop="0"/>
+    <field name="recycling:small_appliances" labelOnTop="0"/>
+    <field name="recycling:waste" labelOnTop="0"/>
+    <field name="recycling:wood" labelOnTop="0"/>
+    <field name="recycling_type" labelOnTop="0"/>
+    <field name="ref" labelOnTop="0"/>
+    <field name="ref:FR:RATP" labelOnTop="0"/>
+    <field name="ref:FR:STIF" labelOnTop="0"/>
+    <field name="ref:FR:uic8" labelOnTop="0"/>
+    <field name="ref:IT:IRVV" labelOnTop="0"/>
+    <field name="ref:SNCF" labelOnTop="0"/>
+    <field name="ref:isil" labelOnTop="0"/>
+    <field name="ref:it:vat" labelOnTop="0"/>
+    <field name="ref:mise" labelOnTop="0"/>
+    <field name="ref:terna" labelOnTop="0"/>
+    <field name="ref:vatin" labelOnTop="0"/>
+    <field name="religion" labelOnTop="0"/>
+    <field name="rental" labelOnTop="0"/>
+    <field name="repair" labelOnTop="0"/>
+    <field name="restaurant:type:it" labelOnTop="0"/>
+    <field name="rooms" labelOnTop="0"/>
+    <field name="route" labelOnTop="0"/>
+    <field name="route_ref" labelOnTop="0"/>
+    <field name="route_ref:FR:RER_D" labelOnTop="0"/>
+    <field name="safety_inspection" labelOnTop="0"/>
+    <field name="sale" labelOnTop="0"/>
+    <field name="sanitary_dump_station" labelOnTop="0"/>
+    <field name="scooter" labelOnTop="0"/>
+    <field name="seasonal" labelOnTop="0"/>
+    <field name="seats" labelOnTop="0"/>
+    <field name="second_hand" labelOnTop="0"/>
+    <field name="segregated" labelOnTop="0"/>
+    <field name="self_service" labelOnTop="0"/>
+    <field name="sells" labelOnTop="0"/>
+    <field name="sells:tobacco" labelOnTop="0"/>
+    <field name="service" labelOnTop="0"/>
+    <field name="service:bicycle:cleaning" labelOnTop="0"/>
+    <field name="service:bicycle:diy" labelOnTop="0"/>
+    <field name="service:bicycle:pump" labelOnTop="0"/>
+    <field name="service:bicycle:rental" labelOnTop="0"/>
+    <field name="service:bicycle:repair" labelOnTop="0"/>
+    <field name="service:bicycle:retail" labelOnTop="0"/>
+    <field name="service:bicycle:second_hand" labelOnTop="0"/>
+    <field name="service_times" labelOnTop="0"/>
+    <field name="shelter" labelOnTop="0"/>
+    <field name="shop" labelOnTop="0"/>
+    <field name="shop:bicycle:market" labelOnTop="0"/>
+    <field name="shop:bicycle:pump" labelOnTop="0"/>
+    <field name="shop:bicycle:rental" labelOnTop="0"/>
+    <field name="shop:bicycle:repair" labelOnTop="0"/>
+    <field name="shop:bicycle:retail" labelOnTop="0"/>
+    <field name="shop:bicycle:second_hand" labelOnTop="0"/>
+    <field name="shop_1" labelOnTop="0"/>
+    <field name="sides" labelOnTop="0"/>
+    <field name="sloped_curb" labelOnTop="0"/>
+    <field name="smoking" labelOnTop="0"/>
+    <field name="smoothness" labelOnTop="0"/>
+    <field name="social_facility" labelOnTop="0"/>
+    <field name="socket:chademo" labelOnTop="0"/>
+    <field name="socket:schuko" labelOnTop="0"/>
+    <field name="socket:type2" labelOnTop="0"/>
+    <field name="source:access" labelOnTop="0"/>
+    <field name="source:date" labelOnTop="0"/>
+    <field name="source:def" labelOnTop="0"/>
+    <field name="source:ele" labelOnTop="0"/>
+    <field name="source:maxheight" labelOnTop="0"/>
+    <field name="source:maxspeed" labelOnTop="0"/>
+    <field name="source:position" labelOnTop="0"/>
+    <field name="species" labelOnTop="0"/>
+    <field name="species:en" labelOnTop="0"/>
+    <field name="species:it" labelOnTop="0"/>
+    <field name="sport" labelOnTop="0"/>
+    <field name="stamps" labelOnTop="0"/>
+    <field name="stars" labelOnTop="0"/>
+    <field name="start_date" labelOnTop="0"/>
+    <field name="stop" labelOnTop="0"/>
+    <field name="street_cabinet" labelOnTop="0"/>
+    <field name="structure" labelOnTop="0"/>
+    <field name="substation" labelOnTop="0"/>
+    <field name="supervised" labelOnTop="0"/>
+    <field name="support" labelOnTop="0"/>
+    <field name="surface" labelOnTop="0"/>
+    <field name="surveillance" labelOnTop="0"/>
+    <field name="survey:date" labelOnTop="0"/>
+    <field name="swing_gate:type" labelOnTop="0"/>
+    <field name="tactile_paving" labelOnTop="0"/>
+    <field name="takeaway" labelOnTop="0"/>
+    <field name="tasting" labelOnTop="0"/>
+    <field name="tmc" labelOnTop="0"/>
+    <field name="tobacco" labelOnTop="0"/>
+    <field name="toilets" labelOnTop="0"/>
+    <field name="toilets:access" labelOnTop="0"/>
+    <field name="toilets:position" labelOnTop="0"/>
+    <field name="toilets:wheelchair" labelOnTop="0"/>
+    <field name="toll" labelOnTop="0"/>
+    <field name="tourism" labelOnTop="0"/>
+    <field name="tourist_bus" labelOnTop="0"/>
+    <field name="towards" labelOnTop="0"/>
+    <field name="tower" labelOnTop="0"/>
+    <field name="tower:type" labelOnTop="0"/>
+    <field name="traffic_calming" labelOnTop="0"/>
+    <field name="traffic_sign" labelOnTop="0"/>
+    <field name="traffic_sign:forward" labelOnTop="0"/>
+    <field name="traffic_sign:position" labelOnTop="0"/>
+    <field name="traffic_signals" labelOnTop="0"/>
+    <field name="traffic_signals:direction" labelOnTop="0"/>
+    <field name="traffic_signals:light" labelOnTop="0"/>
+    <field name="traffic_signals:sound" labelOnTop="0"/>
+    <field name="train" labelOnTop="0"/>
+    <field name="tram" labelOnTop="0"/>
+    <field name="trolleybus" labelOnTop="0"/>
+    <field name="truck" labelOnTop="0"/>
+    <field name="turn:lanes" labelOnTop="0"/>
+    <field name="type" labelOnTop="0"/>
+    <field name="type:RATP" labelOnTop="0"/>
+    <field name="uic_name" labelOnTop="0"/>
+    <field name="uic_ref" labelOnTop="0"/>
+    <field name="unisex" labelOnTop="0"/>
+    <field name="url" labelOnTop="0"/>
+    <field name="usage" labelOnTop="0"/>
+    <field name="vehicle" labelOnTop="0"/>
+    <field name="vehicle:forward:conditional" labelOnTop="0"/>
+    <field name="vehicles" labelOnTop="0"/>
+    <field name="vending" labelOnTop="0"/>
+    <field name="vending_machine" labelOnTop="0"/>
+    <field name="visibility" labelOnTop="0"/>
+    <field name="voltage" labelOnTop="0"/>
+    <field name="waste" labelOnTop="0"/>
+    <field name="waterway" labelOnTop="0"/>
+    <field name="website" labelOnTop="0"/>
+    <field name="wheelchair" labelOnTop="0"/>
+    <field name="wheelchair:description" labelOnTop="0"/>
+    <field name="wheelchair:description:en" labelOnTop="0"/>
+    <field name="wheelchair:description:it" labelOnTop="0"/>
+    <field name="width" labelOnTop="0"/>
+    <field name="width:bicycle" labelOnTop="0"/>
+    <field name="wifi" labelOnTop="0"/>
+    <field name="wikidata" labelOnTop="0"/>
+    <field name="wikipedia" labelOnTop="0"/>
   </labelOnTop>
+  <reuseLastValue>
+    <field name="address" reuseLastValue="0"/>
+    <field name="amenity" reuseLastValue="0"/>
+    <field name="barrier" reuseLastValue="0"/>
+    <field name="capacity" reuseLastValue="0"/>
+    <field name="fid" reuseLastValue="0"/>
+    <field name="highway" reuseLastValue="0"/>
+    <field name="is_in" reuseLastValue="0"/>
+    <field name="man_made" reuseLastValue="0"/>
+    <field name="name" reuseLastValue="0"/>
+    <field name="osm_id" reuseLastValue="0"/>
+    <field name="other_tags" reuseLastValue="0"/>
+    <field name="parking_space" reuseLastValue="0"/>
+    <field name="place" reuseLastValue="0"/>
+    <field name="ref" reuseLastValue="0"/>
+  </reuseLastValue>
+  <dataDefinedFieldProperties/>
   <widgets/>
-  <previewExpression>osm_id</previewExpression>
+  <previewExpression>"osm_id"</previewExpression>
   <mapTip></mapTip>
   <layerGeometryType>0</layerGeometryType>
 </qgis>
