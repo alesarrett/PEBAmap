@@ -56,16 +56,34 @@ The query corresponds to the following Overpass XML:
     <union>
         <query type="node">
             <has-kv k="amenity" v="parking_space"/>
-            <has-kv k="disabled" v="designated"/>
+            <has-kv k="disabled" v=""/>
             <bbox-query {{bbox}}/>
         </query>
         <query type="way">
             <has-kv k="amenity" v="parking_space"/>
-            <has-kv k="disabled" v="designated"/>
+            <has-kv k="disabled" v=""/>
             <bbox-query {{bbox}}/>
         </query>
+        <query type="node">
+            <has-kv k="parking_space" v="disabled"/>
+             <bbox-query {{bbox}}/>
+       </query>
         <query type="way">
-            <has-kv k="highway" regv="footway|path|pedestrian"/>
+            <has-kv k="parking_space" v="disabled"/>
+             <bbox-query {{bbox}}/>
+       </query>
+        <query type="node">
+            <has-kv k="amenity" v="parking_space"/>
+            <has-kv k="access:disabled" v=""/>
+             <bbox-query {{bbox}}/>
+       </query>
+        <query into="_" type="way">
+            <has-kv k="amenity" v="parking_space"/>
+            <has-kv k="access:disabled" v=""/>
+             <bbox-query {{bbox}}/>
+       </query>
+        <query type="way">
+            <has-kv k="highway" regv="footway|cycleway|path|pedestrian"/>
             <bbox-query {{bbox}}/>
         </query>
     </union>
@@ -109,7 +127,7 @@ WHEN "wheelchair"='no' THEN 'not accessible'
 WHEN "crossing"='traffic_signals' AND "traffic_signal:sound" = 'no' THEN 'not accessible'
 WHEN "crossing"='unmarked' THEN 'limited accessibility'
 WHEN "highway"='path' AND "segregated"='no' THEN 'limited accessibility'
-WHEN "incline" > 8 OR "incline:across" > 1 OR "height" > 0.15 OR "smoothness" = 'intermediate' OR "smoothness" = 'bad' THEN 'limited accessibility'
+WHEN "incline_n" > 8 OR "incline:across_n" > 1 OR "height" > 0.15 OR "smoothness" = 'intermediate' OR "smoothness" = 'bad' THEN 'limited accessibility'
 WHEN "smoothness" = 'good' THEN 'good accessibility'
 END
 ```
@@ -118,6 +136,7 @@ END
 CASE
 WHEN "kerb"='' THEN ''
 WHEN "kerb"='raised' OR "kerb:height" > '0.02' OR ("incline" <> 'yes' AND "incline" > 15) THEN 'not accessible'
+WHEN "kerb"='rolled' THEN 'limited accessibility'
 WHEN ("kerb"='flush' OR "kerb:height" <= '0.01') AND "tactile_paving" = 'yes' THEN 'good accessibility'
 ELSE 'limited accessibility'
 END
@@ -142,9 +161,9 @@ Then features are extracted and then loaded separately in the QGIS interface to 
 
 The following expression are used:
 * for **crossings**: `"footway" = 'crossing' OR "path" = 'crossing'`
-* for **footpaths**: `"footway" <> 'crossing' OR "path" <> 'crossing'`
+* for **footpaths**: `( "highway"  = 'footway' AND ("footway" IS NOT 'crossing')) OR ( "highway"  = 'path' AND ("path" IS NOT 'crossing'))`
 * for **kerbs**: `"kerb" <> ''`
-* for **obstacles**: `"obstacle:wheelchair" = 'yes' OR "obstacle:wheelchair" = 'limited'`
+* for **obstacles**: `"obstacle:wheelchair" = 'yes' OR "obstacle:wheelchair" = 'limited' OR "maxwidth:physical" <> ''`
 
 #### 6. Style layers
 
@@ -159,6 +178,8 @@ Finally, some styles are applied to the layers, using the following .qml QGIS st
 ## Background information
 
 During 2019, the local administration of [Padua](https://en.wikipedia.org/wiki/Padua) promoted and funded a work to the release of the local PEBA - Plan for the Elimination of Architectural Barriers (_Piano per l'Eliminazione delle Barriere Architettoniche_ in italian), with the aim to improve the accessibility of urban spaces (footpaths, sidewalks, ...) and public buildings to all people, with a special focus to disabled people.
+
+Two other local administrations ([Fossò](https://it.wikipedia.org/wiki/Foss%C3%B2) and [Rubano](https://it.wikipedia.org/wiki/Rubano)), during 2023, have used the same approach and data process for their PEBA, with some minor custom adaptations to take into consideration local specificities.
 
 ## Links and references
 
